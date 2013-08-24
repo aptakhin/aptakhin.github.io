@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
+    <url>
+        <loc>http://localhost/blog/2013/08/24/hello/</loc>
+        <lastmod>2013-08-24T12:20:46+04:00</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost/blog/archives/</loc>
+        <lastmod>2013-08-24T12:20:46+04:00</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost/</loc>
+        <lastmod>2013-08-24T12:20:46+04:00</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost/robots.txt</loc>
+        <lastmod>2013-07-27T17:58:32+04:00</lastmod>
+    </url>
+</urlset>

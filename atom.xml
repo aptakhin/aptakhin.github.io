@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Going to light]]></title>
+  <link href="http://localhost/atom.xml" rel="self"/>
+  <link href="http://localhost/"/>
+  <updated>2013-08-24T12:20:47+04:00</updated>
+  <id>http://localhost/</id>
+  <author>
+    <name><![CDATA[Alexander Ptakhin]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Test placeholder]]></title>
+    <link href="http://localhost/blog/2013/08/24/hello/"/>
+    <updated>2013-08-24T17:58:00+04:00</updated>
+    <id>http://localhost/blog/2013/08/24/hello</id>
+    <content type="html"><![CDATA[<p>HW.</p>
+]]></content>
+  </entry>
+  
+</feed>
