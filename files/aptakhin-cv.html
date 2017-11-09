@@ -1,50 +1,70 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Alexander Ptakhin CV</title>
-  <meta charset="utf-8">
+    <title>Alexander Ptakhin CV</title>
+    <meta charset="utf-8">
 
-  <style>
-    h2 {
-      text-transform: uppercase;
-    }
+    <style>
+        body {
+            max-width: 600pt;
+        }
 
-    li {
-        margin-bottom: 5pt;
-        list-style: none;
-    }
+        h2 {
+            text-transform: uppercase;
+            margin-bottom: 0pt;
+        }
 
-    .sq li {
-        list-style: square;
-        margin-bottom: 0pt;
-    }
+        ul {
+            margin-left: 0pt;
+            padding-left: 10pt;
+        }
 
-    .name {
-      text-transform: uppercase;
-    }
+        li {
+            margin-left: 0pt;
+            margin-bottom: 5pt;
+            list-style: none;
+        }
 
-    .company {
-      font-weight: bold;
-    }
+        .sq li {
+            margin-left: 10pt;
+            list-style: square;
+            margin-bottom: 0pt;
+        }
 
-    .date {
-      font-style: italic;
-    }
+        li div {
+            margin-left: 15pt;
+        }
 
-  </style>
+        .name {
+            text-transform: uppercase;
+        }
+
+        .company {
+            font-weight: bold;
+        }
+
+        .date {
+            font-style: italic;
+        }
+
+    </style>
 </head>
 <body>
   <h1 class="name">Alexander Ptakhin</h1>
+
+  <h4>+7 916 620 43 48 ⋄ me@aptakhin.name ⋄ Skype: alexptn</h4>
 
   <h2>Experience</h2>
   <ul>
     <li>
         <span class="company">Yandex</span>, Moscow, <span class="date">December 2014 – ...</span>
+        <div>
         <ul class="sq">
             <li>Developed regression testing and releasing pipeline for AB-testing platform</li>
             <li>Made storage of experiment's metrics and instrument for analyzing them</li>
             <li>Anomalies detection in time-series service support and development</li>
         </ul>
+        </div>
         <div><i>Keywords</i>: C++, Python, Django, MongoDB, Linux.</div>
     </li>
 
