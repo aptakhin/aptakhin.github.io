@@ -6,6 +6,8 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400i,700&display=swap" rel="stylesheet">
+
      <!-- Yandex.Metrika counter -->
     <script type="text/javascript" >
         (function (d, w, c) {
@@ -39,6 +41,7 @@
     <style>
         body {
             max-width: 600pt;
+            font-family: 'Roboto Condensed', sans-serif;
         }
 
         .name {
@@ -61,32 +64,47 @@
             padding-bottom: 0pt;
         }
 
+        .keywords {
+            margin-top: 5pt;
+            list-style-type: none;
+        }
+
+        h2 {
+            text-transform: uppercase;
+        }
+
     </style>
 </head>
 <body>
   <h1 class="name">Alexander Ptakhin</h1>
 
-  <h4><a href="mailto:me@aptakhin.name">me@aptakhin.name</a> ⋄ Telegram: <a href="https://telegram.me/aptakhin">@aptakhin</a></h4>
+  <h4><a href="mailto:me@aptakhin.name">me@aptakhin.name</a> ⋄ Telegram: <a href="tg://resolve?domain=aptakhin">@aptakhin</a></h4>
 
-  <h2>Experience</h2>
+  <h2>Current</h2>
   <ul class="titles">
     <li>
         <span class="company">Nanosemantics</span>, Software Developer Engineer, Moscow, <span class="date">January 2019 – now</span>
         <div>
         <ul class="sq">
              <li>Various short-term projects</li>
+             <li class="keywords"><i>Keywords</i>: python3, asyncio, postgres, rabbitmq, kubernetes, redis, sqlalchemy, alembic</li>
         </ul>
         </div>
-        <div><i>Keywords</i>: python, asyncio, postgres, rabbitmq, kubernetes, redis</div>
     </li>
+  </ul>
+
+  <h2>Experience</h2>
+
+  <ul class="titles">
     <li>
-        <span class="company">Ashmanov Neural Networks</span>, Software Developer Engineer, Moscow, <span class="date">April 2018 – now, full time/part time now</span>
+        <span class="company">Ashmanov Neural Networks</span>, Software Developer Engineer, Moscow, <span class="date">April 2018 – December 2018 full-time</span><br>
+        <span class="company">Puzzle.ru</span>, Co-owner, Chief Technical Officer, Moscow, <span class="date">January 2019 – November 2019 part-time</span>
         <div>
         <ul class="sq">
-            <li>Frontend/backend lead developer <a href="https://puzzle.ru">Puzzle.ru</a> – Audience parser for VK russian social network</li>
+            <li>Frontend/backend lead developer puzzle.ru – Audience parser for VK russian social network</li>
+            <li class="keywords"><i>Keywords</i>: python3, asyncio, postgres, javascript, react, elastic, ubuntu</li>
         </ul>
         </div>
-        <div><i>Keywords</i>: python, asyncio, postgres, javascript, react, ubuntu</div>
     </li>
     <li>
         <span class="company">Yandex</span>, Software Developer Engineer, Moscow, <span class="date">December 2014 – December 2017</span>
@@ -95,31 +113,38 @@
             <li>Developed regression testing and releasing pipeline for AB-testing platform</li>
             <li>Made storage of experiment's metrics data and instrument for analyzing them</li>
             <li>Anomalies detection in time-series service support and development</li>
+
+            <li class="keywords"><i>Keywords</i>: c++, python2, django, mongodb, javascript, ubuntu</li>
         </ul>
         </div>
-        <div><i>Keywords</i>: c++, python, django, mongodb, javascript, ubuntu</div>
     </li>
-
     <li>
         <span class="company">NIIAS</span>, Software Developer Engineer, Moscow, <span class="date">April 2013 – December 2014</span>
-        <div>Developed diagnostic software for displaying many components in wireless railway solution for trains and stations. Dumps history and plays it</div>
-        <div><i>Keywords</i>: c++, embarcadero stack, winsockets, gtest</div>
+        <ul class="sq">
+            <li>Developed diagnostic software for displaying many components in wireless railway solution for trains and stations. Dumps history and plays it</div>
+            <li class="keywords"><i>Keywords</i>: c++, embarcadero stack, winsockets, gtest
+        </ul>
     </li>
   </ul>
 
   <h2>Technical strengths</h2>
   <ul>
-    <li>Languages (primary): python, javascript</li>
-    <li>Languages (less practice now): c++</li>
+    <li>Primary languages: python3, javascript</li>
+    <li>Less practice languages now: c++</li>
     <li>Platforms: linux, windows, mac os</li>
     <li>Other: vcs, bug trackers, code reviews, wiki, ci/cd</li>
+  </ul>
+
+  <h2>Management</h2>
+  <ul>
+    <li>Technical leader for up to 3 middle developers</li>
   </ul>
 
   <h2>Education</h2>
   <ul>
     <li>
         <div><span class="company">Moscow State University</span>, <span class="date">September 2009 – June 2014</span></div>
-        <div>Mechanics-Mathematics Faculty, Mechanics</div>
+        <div>Mechanics-Mathematics Faculty, Mechanics. Theoretical Mechanics and Robotics</div>
     </li>
   </ul>
 </body>
