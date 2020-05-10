@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Alexander Ptakhin</title>
+    <link>https://aptakhin.name/categories/</link>
+    <description>Recent content in Categories on Alexander Ptakhin</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 10 May 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://aptakhin.name/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>python</title>
+      <link>https://aptakhin.name/categories/python/</link>
+      <pubDate>Sun, 10 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://aptakhin.name/categories/python/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
