@@ -13,17 +13,12 @@
   </url>
   
   <url>
-    <loc>https://aptakhin.name/categories/</loc>
-    <lastmod>2020-05-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://aptakhin.name/cv-ru/</loc>
-    <lastmod>2020-05-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://aptakhin.name/cv/</loc>
+    <lastmod>2020-05-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aptakhin.name/categories/</loc>
     <lastmod>2020-05-10T00:00:00+00:00</lastmod>
   </url>
   
@@ -49,6 +44,11 @@
   
   <url>
     <loc>https://aptakhin.name/tags/</loc>
+    <lastmod>2020-05-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aptakhin.name/cv-ru/</loc>
     <lastmod>2020-05-10T00:00:00+00:00</lastmod>
   </url>
   
