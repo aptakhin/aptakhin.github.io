@@ -44,7 +44,8 @@
     <style>
         body {
             max-width: 600pt;
-            font-family: 'Roboto Condensed', sans-serif;
+            font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+            font-display: fallback;
         }
 
         .name {
@@ -98,15 +99,17 @@
 <body>
 <h1 class="name">Птахин Александр</h1>
 
-<div class="resume">28 лет, Москва, для связи: <a href="mailto:me@aptakhin.name">me@aptakhin.name</a> // обновил резюме в мае 2020</div>
+<div class="resume">28 лет, Москва, для связи: <a href="mailto:me@aptakhin.name">me@aptakhin.name</a> // обновил резюме в июне 2020</div>
 
-<div class="head"><b>Позиция:</b> тимлид 4 мидл разработчиков Python3</div>
+<div class="head"><b>Позиция:</b> старший разработчик/техлид</div>
 
 <h2>Навыки</h2>
 <ul>
-<li>Основные языки: Python3, JavaScript</li>
-<li>Менее активные: C++</li>
+<li>Основные языки: Python3</li>
+<li>Менее активные: JavaScript, C++</li>
 <li>Руководство: 1-4 мидл разработчиков</li>
+<li>Больше ключевых слов ниже</li>
+<!-- <li>CI/CD: процессы, Docker Compose, Kubernetes, GitLab CI, GitHub Actions</li> -->
 </ul>
 
 <h2>Сейчас</h2>
@@ -116,25 +119,49 @@
     <div>
     <ul class="sq">
         <li>Руководство группой 1-4 мидл разработчиков</li>
-        <li>Формирование, декомпозиция задач по ТЗ и без. Планирование. Приоритезация с PO. Контроль выполнения. Проектирование систем.</li>
+        <li>Формирование, декомпозиция задач по ТЗ и без. Планирование. Приоритезация с PO. Проектирование систем. 1 на 1</li>
         <li>Техлид: бекенд IDE для написания чат-ботов:
             <ul>
-                <li>Внедрил санитарный минимум: ci/cd Gitlab, Kubernetes</li>
+                <li>Проектирование и реализация</li>
+                <li>Добавил процессов: Gitlab CI/CD</li>
                 <!-- Мониторинги, метрики, дашборд метрик -->
             </ul>
         </li>
-        <li>Разработчик: короткие проекты
+        <li>Техлид: сервис для разметки данных для обучения
+            <ul>
+                <li>Планирование поддержки прототипа и расширение до готового сервиса</li>
+            </ul>
+        </li>
+        <!-- <li>Разработчик: короткие проекты
             <ul>
                 <li>Asyncio бекенд конкурса Тьюринга выжимал синтетических 100 rps на небольшой виртуалке.</li>
             </ul>
-        </li>
+        </li> -->
         <li>Техлид: внутренний стартап – парсер аудиторий Vk
             <ul>
-                <li>Руководство: 1 разработчик джуниор, затем мидл уровня</li>
+                <li>Руководство: 1 разработчик джуниор/мидл</li>
                 <li>Спроектирован горизонтально масштабируемый процесс краулинга под Vk авторизацией (~6000 rps, финансовое ограничение).</li>
             </ul>
         </li>
-        <li class="keywords"><i>Ключевые слова</i>: Python3, JavaScript, Asyncio, PostgreSQL, RabbitMQ, Kubernetes, Redis, SQLAlchemy, Django, Alembic, Debian, Elastic, Ubuntu</li>
+        <li class="keywords"><i>Ключевые слова</i>: Python3, JavaScript, React, Asyncio, PostgreSQL, RabbitMQ, Kubernetes, Redis, SQLAlchemy, Django, Alembic, Debian, Elastic, Ubuntu</li>
+    </ul>
+    </div>
+</li>
+<!--
+<li>
+    <span class="company">BoxedBox.es<span class="date">May 2020 – now</span>
+    <div>
+    <ul class="sq">
+        <li></li>
+        <li class="keywords"><i>Ключевые слова</i>: Go, Figma, Facebook Ads, Google Analytics</li>
+    </ul>
+    </div>
+</li>-->
+
+<li>
+    <span>Свои проекты</span>
+    <ul class="sq">
+        <li>Валидируемые результаты тестов вне кода <a href="https://github.com/aptakhin/testoot" target="_blank">aptakhin/testoot</a> (Python, Approval testing)</li>
     </ul>
     </div>
 </li>
@@ -149,7 +176,7 @@
     <ul class="sq">
         <li>Разработал регрессионное тестирование платформы расчёта АБ-метрик и её релизный пайплайн.
             <ul>
-                <li>Наладило регулярные еженедельные и внеплановые релизы для ускорения принятия решения по экспериментам.</li>
+                <li>Наладило регулярные еженедельные и внеплановые релизы для ускорения принятия решения по экспериментам Поиска.</li>
             </ul>
         </li>
         <li>Разработчик: сделал хранилище результатов экспериментов и инструмент для их анализа.
@@ -164,7 +191,7 @@
             </ul>
         </li>
 
-        <li class="keywords"><i>Ключевые слова</i>: C++, Python2, Django, MongoDB, Javascript, Ubuntu</li>
+        <li class="keywords"><i>Ключевые слова</i>: C++, Python2, Django, MongoDB, JavaScript, Ubuntu</li>
     </ul>
     </div>
 </li>
@@ -186,6 +213,16 @@
 <li>
     <div><span class="company">Московский Государственный Университет</span>, <span class="date">Сентябрь 2009 – Июль 2014</span></div>
     <div>Механико-математический факультет, Теоретическая механика и робототехника</div>
+</li>
+</ul>
+
+<h2>Ссылки</h2>
+<ul>
+<li>
+    GitHub: <a href="https://github.com/aptakhin" target="_blank">github.com/aptakhin</a>
+</li>
+<li>
+    Facebook: <a href="https://www.facebook.com/alexander.ptakhin" target="_blank">fb.com/alexander.ptakhin</a>
 </li>
 </ul>
 
