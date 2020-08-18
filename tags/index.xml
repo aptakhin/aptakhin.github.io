@@ -6,10 +6,37 @@
     <description>Recent content in Tags on Alexander Ptakhin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 10 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 18 Aug 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://aptakhin.name/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>codereview</title>
+      <link>https://aptakhin.name/tags/codereview/</link>
+      <pubDate>Tue, 18 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://aptakhin.name/tags/codereview/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>podlodka</title>
+      <link>https://aptakhin.name/tags/podlodka/</link>
+      <pubDate>Tue, 18 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://aptakhin.name/tags/podlodka/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>summary</title>
+      <link>https://aptakhin.name/tags/summary/</link>
+      <pubDate>Tue, 18 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://aptakhin.name/tags/summary/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>gdb</title>
