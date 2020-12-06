@@ -6,7 +6,7 @@
     <description>Recent content on Alexander Ptakhin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 18 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 10 May 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://aptakhin.name/index.xml" rel="self" type="application/rss+xml" />
     
@@ -32,6 +32,15 @@
 Заходим в поду.
 Чтобы понять про процессы:
 $ top top - 19:00:06 up 22 days, 10:42, 0 users, load average: 0.79, 0.89, 1.11 Tasks: 13 total, 1 running, 7 sleeping, 0 stopped, 5 zombie %Cpu(s): 1.2 us, 1.4 sy, 0.0 ni, 95.0 id, 2.1 wa, 0.2 hi, 0.1 si, 0.1 st MiB Mem : 32165.3 total, 14305.0 free, 3202.</description>
+    </item>
+    
+    <item>
+      <title>Резюме Птахина Александра</title>
+      <link>https://aptakhin.name/cv-ru/</link>
+      <pubDate>Sun, 10 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://aptakhin.name/cv-ru/</guid>
+      <description>Птахин Александр 28 лет, Москва, для связи: me@aptakhin.name // обновил резюме в декабре 2020 Позиция: тимлид 4 мидл разработчиков Python3 Навыки  Основные языки: Python3 Менее активные: JavaScript, C++ Руководство: 1-4 мидл разработчиков  Сейчас  Admitad Global, Python Senior Developer, Москва, Июль 2020 – настоящее время  TBD Ключевые слова: Python3, Asyncio, PostgreSQL, Redis, SQLAlchemy, Alembic, Gitlab CI/CD, Ansible     Ранее  SOVA.ai, Руководитель группы, Москва, Апрель 2018 – июль 2020  Руководство группой 1-4 мидл разработчиков Формирование, декомпозиция задач по ТЗ и без.</description>
     </item>
     
   </channel>
