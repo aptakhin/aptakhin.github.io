@@ -52,59 +52,89 @@
             letter-spacing: 1pt;
         }
 
-        .company {
-            font-weight: bold;
-        }
-
-        .date {
-            font-style: italic;
-        }
-
-        .titles li {
-            padding-bottom: 10pt;
-            position: relative;
-            left: -5pt;
-        }
-
-        .sq li {
-            padding-bottom: 0pt;
-            position: relative;
-            left: -10pt;
-        }
-
-        .keywords {
-            margin-top: 5pt;
-            list-style-type: none;
+        .summary {
+            letter-spacing: 0.2pt;
+            margin-bottom: 20px;
         }
 
         h2 {
             text-transform: uppercase;
             letter-spacing: 1pt;
+            margin-top: 19pt;
+            margin-bottom: 9pt;
         }
 
-        .resume {
-            text-transform: initial;
-            letter-spacing: 0.6pt;
-            margin-top: 10pt;
-            margin-bottom: 10pt;
+        .company {
+            letter-spacing: 1px;
         }
 
-        .head {
-            text-transform: initial;
-            letter-spacing: 0.6pt;
-            font-size: 16pt;
-            margin-top: 10pt;
-            margin-bottom: 10pt;
+        .experience {
+            display: flex;
+            width: 100%;
+
+            flex: 0 1 auto;
+            flex-flow: row wrap;
+
+            padding: 0;
+            margin: 0;
+        }
+        .experience::after {
+            content: "";
+            flex: auto;
         }
 
-        .help {
-             
-            margin: 10pt 10pt 10pt 10pt;
+        .experience .date {
+            padding: 5px;
+            width: 170px;
+            margin-top: 5px;
+            font-style: italic;
+            text-align: left;
+        }
+
+        .experience .desc {
+            padding: 3px;
+            width: 600px;
+            margin-top: 0px;
+            margin-left: 180px;
+            text-align: left;
+        }
+
+        .experience .title {
+            padding: 5px;
+            width: 300px;
+            margin-top: 5px;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        .skills {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .skills .chapter {
+            padding: 5px;
+            width: 20%;
+            box-sizing: border-box;
+            max-height: 50px;
+            text-align: right;
+            letter-spacing: 1px;
+        }
+
+        .skills .desc {
+            padding: 5px;
+            width: 80%;
+            box-sizing: border-box;
+            max-height: 50px;
         }
 
     </style>
 </head>
 <body>
+
+
 <h1 class="name">Alexander Ptakhin</h1>
 
 <ul>
@@ -120,172 +150,107 @@
 </ul>
 
 <h2>Summary</h2>
-<div>
-Strong full-stack developer experience with a focus on faster features delivery with testing and CI/CD.
-
-Experience with architecting and supporting highly loaded services. And managing cross-functional and backend teams of 4 developers
+<div class="summary">
+Strong full-stack and backend developer experience focusing on minding out of job positions for customer happiness. Have experience with designing and supporting highly loaded services and tech-leading up to 4 developers. Encouraging and facilitating open-minded team discussions for an outgoing team atmosphere and achieving goals.
 </div>
 
-<h2>Current</h2>
-<ul class="titles">
-<li>
-    <span class="company">Admitad Global</span>, Moscow, 1 year now
-    <div class="help">
-        Admitad is an international company. We develop new means to drive sales and earn online, such as Admitad Cashback, ConvertSearch, ConvertLink, ConvertSocial, and Admitad Vendor Network.
+<!-- <h2>Current</h2> -->
+<h2>Experience</h2>
+<div class="experience">
+  <div class="date">Jul 2020 - now, ~1.5 year</div>
 
-        The company was founded in Germany in 2009. Headquater office locates in Heilbronn. Currently, Admitad has offices in seven countries around the globe and over 900 employees
-    </div>
-    <ul class="titles">
-        <li>
-            Team leader, <span class="date">~1 year, December 2020 - ...</span>
-            <div>
-            <ul class="sq">
-                <li>Responsibility: team and product reliability: internal Data Warehouse; Antifraud services; product feeds service</li>
-                <li>Team delivery and hiring adjustment, public delivery metrics, knowledge database created</li>
-                <li>People management: hiring and growing</li>
-                <li>Configured reliable delivery of business entities: additional automation sending, entities testing automation. Antifraud alerts launching. The new version of traffic quality soft-launch</li>
-                <li>Negotiation и contracting with tech consulting</li>
-                <li class="keywords"><i>Management keywords</i>: Scrum, Kanban-method, YouTrack, 1-on-1, self-organizing team</li>
-                <li class="keywords"><i>Keywords</i>: ClickHouse, Kafka, Logstash, Python3, Asyncio, NodeJS, MySQL, RabbitMQ</li>
-            </ul>
-            </div>
-        </li>
-        <li>
-            Senior Python Developer, <span class="date">5 month, July 2020 – December 2020</span>
-            <div>
-            <ul class="sq">
-                <li>HTTP streaming of millions of products</li>
-                <li>Integration testing: minus half an hour of developers handwork (-70% time)</li>
-                <li class="keywords"><i>Keywords</i>: Python3, Asyncio, PostgreSQL, Redis, SQLAlchemy, Alembic, Gitlab CI/CD, Ansible</li>
-            </ul>
-            </div>
-        </li>
+  <div class="title">Senior Python Engineer/Data Engineer Tech Lead at Admitad, Moscow</div>
+  <div class="date"></div>
+  <div class="desc">
+    Admitad is an international company. We develop new means to drive sales and earn online, such as Admitad Cashback, ConvertSearch, ConvertLink, ConvertSocial, and Admitad Vendor Network. The company was founded in Germany in 2009. Headquater office locates in Heilbronn. Currently, Admitad has offices in seven countries around the globe and over 900 employees.
+
+    <ul>
+      <li>Achieved astonishing reliability SLA goals and further developing for internal Data Warehouse product</li>
+      <li>Drived contracting with ClickHouse tech consulting and cloud provider</li>
+      <li>Made HTTP streaming of millions of products from databases with huge gigabyte files</li>
+      <li>Integration testing: minus half an hour of developers handwork per task (-70% time)</li>
     </ul>
-</li>
-</ul>
+  </div>
+</div>
 
-<h2>Past</h2>
+<!-- <h2>Past</h2> -->
+<div class="experience">
+  <div class="date">Apr&nbsp;2018&nbsp;– Jul&nbsp;2020, 2&nbsp;years</div>
+  <div class="title">Python Developer/Tech lead at Nanosemantics.ai, Moscow</div>
+  <div class="desc">
+    Nanosemantics.ai is Russia’s leading artificial intelligence technology developer. Founded in 2005, it specializes in applied linguistics, internet technologies, and quality client service solutions.
 
-<ul class="titles">
-<li>
-    <span class="company">Nanosemantics/SOVA.ai group of company</span>, Moscow, <span class="date">2 years, April 2018 – July 2020</span>
-    <div class="help">
-        Nanosemantics Lab is Russia’s leading artificial intelligence technology developer. Founded in 2005, it specializes in applied linguistics, internet technologies and quality client service solutions
-    </div>
-    <div>
-        <ul class="titles">
-        <li>
-            Team Leader, <span class="date">2 years, April 2018 – July 2020</span>
-            <div>
-            <ul class="sq">
-                <li>Managing 1-4 middle developers</li>
-                <li>Making, decomposing tasks. Planning. Prioritization with PO. Architecture. 1-by-1</li>
-                <li>Various integrations and short-term projects: e.g. Turing contest backend</li>
+    <ul>
+      <li>Lead engineer role audience parser startup for Vk.com social network. Managing: 1 developer. Made architecture for horizontal scaled crawling process with Vk.com authorization ~6000 rps from one VDS</li>
+      <li>Lead engineer of chatbot IDE backend: architecture and development. Added delivery process Gitlab CI/CD on top of Kubernetes</li>
+      <li>Tech lead of markup data service for machine learning. Prototype developing support and new growing design architecture for b2b service</li>
+      <li>Developer: various integrations and short-term projects e.g. Turing contest asyncio backend Turing contest with 100 rps on small VPS</li>
+      </ul>
+  </div>
+</div>
 
-                <li>Team lead: chatbot IDE backend:
-                <ul>
-                    <li>Architecture and development</li>
-                    <li>Added processes: Gitlab CI/CD, Kubernetes</li>
-                </ul>
-                </li>
+<div class="experience">
+  <div class="date">Dec&nbsp;2014&nbsp;– Dec&nbsp;2017, 3&nbsp;years</div>
+  <div class="title">Software Developer Engineer at Yandex, Moscow</div>
+    <div class="desc">
+      Yandex is a technology company that builds intelligent products and services powered by machine learning. Our goal is to help consumers and businesses better navigate the online and offline world. Since 1997, we have delivered world-class, locally relevant search and information services. Additionally, we have developed market-leading on-demand transportation services, navigation products, and other mobile applications for millions of consumers across the globe. Yandex, which has 30 offices worldwide, has been listed on the NASDAQ since 2011.
 
-                <li>Team lead: markup data service for machine learning:
-                <ul>
-                    <li>Planning of prototype support and architecture for b2b service</li>
-                </ul>
-                </li>
+      <ul>
+        <li>Developed the regression testing and releasing pipeline for the AB-testing metrics platform. Mades possible regular weekly releases with higher quality (less 3-5 long-debugging bugs in a month)
+        <li>Made the storage of the experiment's metrics data and the instrument for analyzing them. The tool reduces experiments time and money costs
+        <li>Anomalies detection in time-series service: increased throughput and storage x10 from unsupported cloud stack</li>
+      </ul>
+   </div>
+</div>
 
-                <li>Team lead: internal startup – Vk.com (Main russian social network) audience parser:
-                <ul>
-                    <li>Managing: 1 developer</li>
-                    <li>Made architecture for horizontal scaled crawling process with Vk authorization (~6000 rps, financial limitation)</li>
-                </ul>
-                </li>
+<div class="experience">
+  <div class="date">Apr&nbsp;2013&nbsp;– Dec&nbsp;2014, ~1.5&nbsp;year</div>
+  <div class="title">Software Developer Engineer at NIIAS, Moscow</div>
+  <div class="desc">
+    NIIAS – one of the research institutes of Russian Railway (RZD).
 
-                <li class="keywords"><i>Keywords</i>: Python3, JavaScript, React, Asyncio, PostgreSQL, RabbitMQ, Kubernetes, Redis, SQLAlchemy, Django, Alembic, Elastic, Ubuntu</li>
-            </ul>
-            </div>
-        </li>
-        <li>
-            Software Developer <span class="date">10 month, December 2018 – September 2019</span>
-            <div>
-            <ul class="sq">
-                <li>Various integrations and short-term projects: e.g. Turing contest backend
-                <ul>
-                    <li>Asyncio backend Turing contest with 100 rps on small VPS</li>
-                </ul>
-                </li>
-
-                <li class="keywords"><i>Keywords</i>: Python3, Asyncio, PostgreSQL, RabbitMQ, Kubernetes, Redis, Debian, Elastic</li>
-            </ul>
-            </div>
-        </li>
-        </ul>
-    </div>
-</li>
-</ul>
-
-<ul class="titles">
-<li>
-    <span class="company">Yandex</span>, Moscow, <span class="date">3 years, December 2014 – December 2017</span>
-    <div class="help">
-        Yandex is a technology company that builds intelligent products and services powered by machine learning. Our goal is to help consumers and businesses better navigate the online and offline world. Since 1997, we have delivered world-class, locally relevant search and information services. Additionally, we have developed market-leading on-demand transportation services, navigation products, and other mobile applications for millions of consumers across the globe. Yandex, which has 30 offices worldwide, has been listed on the NASDAQ since 2011
-    </div>
-    <div>
-        <ul class="titles">
-        <li>
-            Software Developer Engineer, <span class="date">2 years, April 2018 – July 2020</span>
-            <div>
-            <ul class="sq">
-                <li>Developed the regression testing and releasing pipeline for the AB-testing metrics platform. Mades possible regular releases with the higher quality.</li>
-                <li>Made the storage of the experiment's metrics data and the instrument for analyzing them. The tool gives more transparency for whole Yandex AB experiments.</li>
-                <li>Anomalies detection in time-series service: increased throughput and storage x10</li>
-
-                <li class="keywords"><i>Keywords</i>: C++, Python2, Django, MongoDB, Javascript, Ubuntu</li>
-            </ul>
-            </div>
-        </li>
-        </ul>
-    </div>
-</li>
-<li>
-    <span class="company">NIIAS</span>, Moscow, <span class="date">1 year, April 2013 – December 2014</span>
-    <div class="help">
-        NIIAS – one of the research institues of Russian Railway (RZD)
-    </div>
-    <div>
-        <ul class="titles">
-        <li>
-            Software Developer Engineer, <span class="date">1 year, April 2013 – December 2014</span>
-            <div>
-            <ul class="sq">
-                <li>Developed diagnostic software for displaying many components in wireless railway solution for trains and stations. Dumps history and plays it. Can't reproduce system problems earlier and now can.
-                <li class="keywords"><i>Keywords</i>: C++, Embarcadero, Winsockets, gtest</li>
-            </ul>
-            </div>
-        </li>
-        </ul>
-    </div>
-</li>
-</ul>
+    <ul>
+      <li>Developed diagnostic software for displaying system component's state in wireless railway solution. Dumps history and plays it for debugging system problems</li>
+    </ul>
+  </div>
+</div>
 
 <h2>Technical strengths</h2>
-<ul>
-<li>Primary languages: Python3</li>
-<li>Less practice languages now: Javascript, C++</li>
-<li>Development platforms: Linux</li>
-<li>Testing: pytest, unittest, gtest</li>
-<li>Deploying: Gitlab CI/CD, Ansible, Kubernetes</li>
-<li>Other: VCS, Bug trackers, Code reviews, YouTrack, Jira, Confluence</li>
-</ul>
+
+<div class="skills">
+    <div class="chapter">Primary stack</div>
+    <div class="desc">Python3, asyncio, aiohttp, aio-libs, pytest/unittest</div>
+    <div class="chapter">Secondary stack</div>
+    <div class="desc">JavaScript, C++</div>
+    <!-- <div class="chapter">Development platforms</div>
+    <div class="desc">Linux</div> -->
+    <div class="chapter">Deploying</div>
+    <div class="desc">Gitlab CI/CD, Github Actions, Ansible, Docker, Kubernetes</div>
+    <div class="chapter">Management</div>
+    <div class="desc">Kanban, developer growing, 1:1s</div>
+    <!-- <div class="chapter">Other</div>
+    <div class="desc">Git, code reviews</div> -->
+</div>
+
+<h2>Language</h2>
+
+<div class="skills">
+    <div class="chapter">English</div>
+    <div class="desc">B2</div>
+    <div class="chapter">Russian</div>
+    <div class="desc">Native</div>
+</div>
+
 
 <h2>Education</h2>
-<ul>
-<li>
-    <div><span class="company">Moscow State University</span>, <span class="date">September 2009 – June 2014</span></div>
-    <div>Mechanics-Mathematics Faculty, Mechanics. Theoretical Mechanics and Robotics</div>
-</li>
-</ul>
+<div class="experience">
+    <div class="date">Sep&nbsp;2009&nbsp;– Jun&nbsp;2014, ~5&nbsp;years</div>
+    <div class="title">Master's degree of Mechanics-Mathematics Faculty at Moscow State University</div>
+    <div class="desc">
+    Theoretical Mechanics and Robotics
+    </ul>
+  </div>
+</div>
 
 </body>
 </html>

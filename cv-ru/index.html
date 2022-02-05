@@ -52,54 +52,82 @@
             letter-spacing: 1pt;
         }
 
-        .company {
-            font-weight: bold;
-        }
-
-        .date {
-            font-style: italic;
-        }
-
-        .titles li {
-            padding-bottom: 10pt;
-            position: relative;
-            left: -5pt;
-        }
-
-        .sq li {
-            padding-bottom: 0pt;
-            position: relative;
-            left: -10pt;
-        }
-
-        .keywords {
-            margin-top: 5pt;
-            list-style-type: none;
+        .summary {
+            letter-spacing: 0.2pt;
+            margin-bottom: 20px;
         }
 
         h2 {
             text-transform: uppercase;
             letter-spacing: 1pt;
+            margin-top: 19pt;
+            margin-bottom: 9pt;
         }
 
-        .resume {
-            text-transform: initial;
-            letter-spacing: 0.6pt;
-            margin-top: 10pt;
-            margin-bottom: 10pt;
+        .company {
+            letter-spacing: 1px;
         }
 
-        .head {
-            text-transform: initial;
-            letter-spacing: 0.6pt;
-            font-size: 16pt;
-            margin-top: 10pt;
-            margin-bottom: 10pt;
+        .experience {
+            display: flex;
+            width: 100%;
+
+            flex: 0 1 auto;
+            flex-flow: row wrap;
+
+            padding: 0;
+            margin: 0;
+        }
+        .experience::after {
+            content: "";
+            flex: auto;
         }
 
-        .help {
-             
-            margin: 10pt 10pt 10pt 10pt;
+        .experience .date {
+            padding: 5px;
+            width: 170px;
+            margin-top: 5px;
+            font-style: italic;
+            text-align: left;
+        }
+
+        .experience .desc {
+            padding: 3px;
+            width: 600px;
+            margin-top: 0px;
+            margin-left: 180px;
+            text-align: left;
+        }
+
+        .experience .title {
+            padding: 5px;
+            width: 300px;
+            margin-top: 5px;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        .skills {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .skills .chapter {
+            padding: 5px;
+            width: 20%;
+            box-sizing: border-box;
+            max-height: 50px;
+            text-align: right;
+            letter-spacing: 1px;
+        }
+
+        .skills .desc {
+            padding: 5px;
+            width: 80%;
+            box-sizing: border-box;
+            max-height: 50px;
         }
 
     </style>
