@@ -1,15 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Alexander Ptakhin</title>
+    <title>Alex Ptakhin</title>
     <link>https://aptakhin.name/</link>
-    <description>Recent content on Alexander Ptakhin</description>
+    <description>Recent content on Alex Ptakhin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 10 May 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://aptakhin.name/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Less-complexity &amp; Fast Feedback Teams</title>
+      <link>https://aptakhin.name/posts/2022/less-complexity-and-fast-feedback-teams/</link>
+      <pubDate>Sun, 13 Nov 2022 13:07:38 +0100</pubDate>
+      
+      <guid>https://aptakhin.name/posts/2022/less-complexity-and-fast-feedback-teams/</guid>
+      <description>My goal: bring the idea of basic rules about systems. And nudge to think about the decision effects.
+Audience: senior engineers, engineering managers, and product/project managers.
+ There are many overcomplications in the Tech industry regarding how to work well. There are too many “new” concepts, manyP bestseller books, many conferences and many talks with some “new” ideas. We think we missing something we run into it trying to implement things without going deeper into some basis.</description>
+    </item>
     
     <item>
       <title>[ru] Кодревью</title>
@@ -40,7 +51,7 @@ $ top top - 19:00:06 up 22 days, 10:42, 0 users, load average: 0.79, 0.89, 1.11 
       <pubDate>Sun, 10 May 2020 00:00:00 +0000</pubDate>
       
       <guid>https://aptakhin.name/cv/</guid>
-      <description>Alexander Ptakhin   Email me@aptakhin.name / Mobile +7 916 620-43-48   Linkedin linkedin.com/in/aptakhin / Github github.com/aptakhin   Summary Strong full-stack and backend developer experience focusing on minding out of job positions for customer happiness. Have experience with designing and supporting highly loaded services and tech-leading up to 4 developers. Encouraging and facilitating open-minded team discussions for an outgoing team atmosphere and achieving goals.  Experience Jul 2020 – May 202222&amp;nbsp;months Data Engineer Tech Lead, Moscow, Tbilisi  Admitad is an international company.</description>
+      <description>Alex Ptakhin   Email me@aptakhin.name / Mobile +49 151 207 230 26   Linkedin linkedin.com/in/aptakhin / Github github.com/aptakhin   Summary Strong full-stack and backend developer experience focusing on minding out of job positions for customer happiness. Have experience with designing and supporting highly loaded services and tech-leading up to 4 developers. Encouraging and facilitating open-minded team discussions for an outgoing team atmosphere and achieving goals.  Experience September 2022 – now2 months Senior Python Fullstack Developer, Berlin  Prestatech – b2b company smartlending solutions.</description>
     </item>
     
     <item>

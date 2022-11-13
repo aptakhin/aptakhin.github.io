@@ -1,15 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Alexander Ptakhin</title>
+    <title>Posts on Alex Ptakhin</title>
     <link>https://aptakhin.name/posts/</link>
-    <description>Recent content in Posts on Alexander Ptakhin</description>
+    <description>Recent content in Posts on Alex Ptakhin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 18 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 13 Nov 2022 13:07:38 +0100</lastBuildDate>
     
 	<atom:link href="https://aptakhin.name/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Less-complexity &amp; Fast Feedback Teams</title>
+      <link>https://aptakhin.name/posts/2022/less-complexity-and-fast-feedback-teams/</link>
+      <pubDate>Sun, 13 Nov 2022 13:07:38 +0100</pubDate>
+      
+      <guid>https://aptakhin.name/posts/2022/less-complexity-and-fast-feedback-teams/</guid>
+      <description>My goal: bring the idea of basic rules about systems. And nudge to think about the decision effects.
+Audience: senior engineers, engineering managers, and product/project managers.
+ There are many overcomplications in the Tech industry regarding how to work well. There are too many “new” concepts, manyP bestseller books, many conferences and many talks with some “new” ideas. We think we missing something we run into it trying to implement things without going deeper into some basis.</description>
+    </item>
     
     <item>
       <title>[ru] Кодревью</title>
