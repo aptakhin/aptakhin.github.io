@@ -1,85 +1,56 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
+    <loc>https://aptakhin.name/posts/2022/a-lot-of-work-reflection-and-education/</loc>
+    <lastmod>2022-12-07T14:10:42+01:00</lastmod>
+  </url><url>
+    <loc>https://aptakhin.name/</loc>
+    <lastmod>2022-12-07T14:10:42+01:00</lastmod>
+  </url><url>
+    <loc>https://aptakhin.name/posts/</loc>
+    <lastmod>2022-12-07T14:10:42+01:00</lastmod>
+  </url><url>
     <loc>https://aptakhin.name/posts/2022/less-complexity-and-fast-feedback-teams/</loc>
     <lastmod>2022-11-13T13:07:38+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://aptakhin.name/posts/</loc>
-    <lastmod>2022-11-13T13:07:38+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://aptakhin.name/posts/2020/codereview-summary/</loc>
     <lastmod>2020-08-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://aptakhin.name/categories/</loc>
     <lastmod>2020-08-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://aptakhin.name/tags/codereview/</loc>
     <lastmod>2020-08-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://aptakhin.name/categories/codereview/</loc>
     <lastmod>2020-08-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://aptakhin.name/tags/podlodka/</loc>
     <lastmod>2020-08-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://aptakhin.name/tags/summary/</loc>
     <lastmod>2020-08-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://aptakhin.name/tags/</loc>
     <lastmod>2020-08-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://aptakhin.name/posts/2020/last-in-debugging/</loc>
     <lastmod>2020-05-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://aptakhin.name/</loc>
-    <lastmod>2020-05-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://aptakhin.name/cv/</loc>
     <lastmod>2020-05-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://aptakhin.name/tags/gdb/</loc>
     <lastmod>2020-05-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://aptakhin.name/tags/python/</loc>
     <lastmod>2020-05-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://aptakhin.name/categories/python/</loc>
     <lastmod>2020-05-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://aptakhin.name/cv-ru/</loc>
     <lastmod>2020-05-10T00:00:00+00:00</lastmod>
   </url>
-  
 </urlset>

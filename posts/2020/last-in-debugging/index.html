@@ -29,7 +29,7 @@
   
   
   
-  <meta name="generator" content="Hugo 0.70.0" />
+  <meta name="generator" content="Hugo 0.108.0">
   
   
 
@@ -114,110 +114,123 @@
     <p>Симптомы. Один из подпроцессов в поде кубернетса просто вис и не логировал данные.</p>
 <p>Заходим в поду.</p>
 <p>Чтобы понять про процессы:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ top
-
-top - 19:00:06 up <span style="color:#ae81ff">22</span> days, 10:42,  <span style="color:#ae81ff">0</span> users,  load average: 0.79, 0.89, 1.11
-Tasks:  <span style="color:#ae81ff">13</span> total,   <span style="color:#ae81ff">1</span> running,   <span style="color:#ae81ff">7</span> sleeping,   <span style="color:#ae81ff">0</span> stopped,   <span style="color:#ae81ff">5</span> zombie
-%Cpu<span style="color:#f92672">(</span>s<span style="color:#f92672">)</span>:  1.2 us,  1.4 sy,  0.0 ni, 95.0 id,  2.1 wa,  0.2 hi,  0.1 si,  0.1 st
-MiB Mem :  32165.3 total,  14305.0 free,   3202.7 used,  14657.6 buff/cache
-MiB Swap:      0.0 total,      0.0 free,      0.0 used.  28626.0 avail Mem
-
-  PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
-    <span style="color:#ae81ff">9</span> root      <span style="color:#ae81ff">20</span>   <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">167064</span>  <span style="color:#ae81ff">73724</span>   <span style="color:#ae81ff">8364</span> S   3.0   0.2 141:45.52 python
-    <span style="color:#ae81ff">1</span> root      <span style="color:#ae81ff">20</span>   <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">381020</span>  <span style="color:#ae81ff">53148</span>  <span style="color:#ae81ff">13248</span> S   0.0   0.2  26:46.39 python
-  <span style="color:#ae81ff">780</span> root      <span style="color:#ae81ff">20</span>   <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">381020</span>  <span style="color:#ae81ff">43252</span>   <span style="color:#ae81ff">3324</span> S   0.0   0.1   0:00.00 python
-  <span style="color:#ae81ff">781</span> root      <span style="color:#ae81ff">20</span>   <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">381020</span>  <span style="color:#ae81ff">43224</span>   <span style="color:#ae81ff">3304</span> S   0.0   0.1   0:00.00 python
- <span style="color:#ae81ff">4498</span> root      <span style="color:#ae81ff">20</span>   <span style="color:#ae81ff">0</span>    <span style="color:#ae81ff">5756</span>   <span style="color:#ae81ff">3656</span>   <span style="color:#ae81ff">3120</span> S   0.0   0.0   0:00.07 bash
- <span style="color:#ae81ff">4544</span> root      <span style="color:#ae81ff">20</span>   <span style="color:#ae81ff">0</span>       <span style="color:#ae81ff">0</span>      <span style="color:#ae81ff">0</span>      <span style="color:#ae81ff">0</span> Z   0.0   0.0   0:00.04 python
- <span style="color:#ae81ff">4986</span> root      <span style="color:#ae81ff">20</span>   <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">381020</span>  <span style="color:#ae81ff">43220</span>   <span style="color:#ae81ff">3300</span> S   0.0   0.1   0:00.00 python
-</code></pre></div><p>Есть несколько процессов Питона. Надо понять какой соотвествует зависшему.
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ top
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>top - 19:00:06 up <span style="color:#ae81ff">22</span> days, 10:42,  <span style="color:#ae81ff">0</span> users,  load average: 0.79, 0.89, 1.11
+</span></span><span style="display:flex;"><span>Tasks:  <span style="color:#ae81ff">13</span> total,   <span style="color:#ae81ff">1</span> running,   <span style="color:#ae81ff">7</span> sleeping,   <span style="color:#ae81ff">0</span> stopped,   <span style="color:#ae81ff">5</span> zombie
+</span></span><span style="display:flex;"><span>%Cpu<span style="color:#f92672">(</span>s<span style="color:#f92672">)</span>:  1.2 us,  1.4 sy,  0.0 ni, 95.0 id,  2.1 wa,  0.2 hi,  0.1 si,  0.1 st
+</span></span><span style="display:flex;"><span>MiB Mem :  32165.3 total,  14305.0 free,   3202.7 used,  14657.6 buff/cache
+</span></span><span style="display:flex;"><span>MiB Swap:      0.0 total,      0.0 free,      0.0 used.  28626.0 avail Mem
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+</span></span><span style="display:flex;"><span>    <span style="color:#ae81ff">9</span> root      <span style="color:#ae81ff">20</span>   <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">167064</span>  <span style="color:#ae81ff">73724</span>   <span style="color:#ae81ff">8364</span> S   3.0   0.2 141:45.52 python
+</span></span><span style="display:flex;"><span>    <span style="color:#ae81ff">1</span> root      <span style="color:#ae81ff">20</span>   <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">381020</span>  <span style="color:#ae81ff">53148</span>  <span style="color:#ae81ff">13248</span> S   0.0   0.2  26:46.39 python
+</span></span><span style="display:flex;"><span>  <span style="color:#ae81ff">780</span> root      <span style="color:#ae81ff">20</span>   <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">381020</span>  <span style="color:#ae81ff">43252</span>   <span style="color:#ae81ff">3324</span> S   0.0   0.1   0:00.00 python
+</span></span><span style="display:flex;"><span>  <span style="color:#ae81ff">781</span> root      <span style="color:#ae81ff">20</span>   <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">381020</span>  <span style="color:#ae81ff">43224</span>   <span style="color:#ae81ff">3304</span> S   0.0   0.1   0:00.00 python
+</span></span><span style="display:flex;"><span> <span style="color:#ae81ff">4498</span> root      <span style="color:#ae81ff">20</span>   <span style="color:#ae81ff">0</span>    <span style="color:#ae81ff">5756</span>   <span style="color:#ae81ff">3656</span>   <span style="color:#ae81ff">3120</span> S   0.0   0.0   0:00.07 bash
+</span></span><span style="display:flex;"><span> <span style="color:#ae81ff">4544</span> root      <span style="color:#ae81ff">20</span>   <span style="color:#ae81ff">0</span>       <span style="color:#ae81ff">0</span>      <span style="color:#ae81ff">0</span>      <span style="color:#ae81ff">0</span> Z   0.0   0.0   0:00.04 python
+</span></span><span style="display:flex;"><span> <span style="color:#ae81ff">4986</span> root      <span style="color:#ae81ff">20</span>   <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">381020</span>  <span style="color:#ae81ff">43220</span>   <span style="color:#ae81ff">3300</span> S   0.0   0.1   0:00.00 python
+</span></span></code></pre></div><p>Есть несколько процессов Питона. Надо понять какой соотвествует зависшему.
 Обычно если зависло, то упёрлось в логику бесконечного цикла или в системный вызов.
 Скорее всего искать надо среди тех что cpu=0.0, но для иллюстрации покажу и другой пример.</p>
 <p>Сначала проверяем системный вызов. Я попробовал для этого трассировщик системных вызовов <code>strace</code>.</p>
 <p>Взял один процесс c <code>pid=9</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ strace -p <span style="color:#ae81ff">9</span>
-strace: Process <span style="color:#ae81ff">9</span> attached
-<span style="color:#66d9ef">select</span><span style="color:#f92672">(</span>0, NULL, NULL, NULL, <span style="color:#f92672">{</span>tv_sec<span style="color:#f92672">=</span>1, tv_usec<span style="color:#f92672">=</span>22746<span style="color:#f92672">})</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">(</span>Timeout<span style="color:#f92672">)</span>
-getpid<span style="color:#f92672">()</span>                                <span style="color:#f92672">=</span> <span style="color:#ae81ff">9</span>
-write<span style="color:#f92672">(</span>2, <span style="color:#e6db74">&#34;2020-03-04 19:10:43,932 nlab.arm&#34;</span>..., 80<span style="color:#f92672">)</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">80</span>
-sendto<span style="color:#f92672">(</span>5, <span style="color:#e6db74">&#34;Q\0\0\1\235SELECT tasks.task_id AS tas&#34;</span>..., 414, MSG_NOSIGNAL, NULL, 0<span style="color:#f92672">)</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">414</span>
-poll<span style="color:#f92672">([{</span>fd<span style="color:#f92672">=</span>5, events<span style="color:#f92672">=</span>POLLIN|POLLERR<span style="color:#f92672">}]</span>, 1, -1<span style="color:#f92672">)</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">([{</span>fd<span style="color:#f92672">=</span>5, revents<span style="color:#f92672">=</span>POLLIN<span style="color:#f92672">}])</span>
-recvfrom<span style="color:#f92672">(</span>5, <span style="color:#e6db74">&#34;T\0\0\1&lt;\0\ntasks_task_id\0\0\3\4\271\0\1\0\0\v\206\0&#34;</span>..., 16384, 0, NULL, NULL<span style="color:#f92672">)</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">337</span>
-<span style="color:#66d9ef">select</span><span style="color:#f92672">(</span>0, NULL, NULL, NULL, <span style="color:#f92672">{</span>tv_sec<span style="color:#f92672">=</span>2, tv_usec<span style="color:#f92672">=</span>0<span style="color:#f92672">})</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">(</span>Timeout<span style="color:#f92672">)</span>
-getpid<span style="color:#f92672">()</span>                                <span style="color:#f92672">=</span> <span style="color:#ae81ff">9</span>
-write<span style="color:#f92672">(</span>2, <span style="color:#e6db74">&#34;2020-03-04 19:10:45,940 nlab.arm&#34;</span>..., 80<span style="color:#f92672">)</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">80</span>
-sendto<span style="color:#f92672">(</span>5, <span style="color:#e6db74">&#34;Q\0\0\1\235SELECT tasks.task_id AS tas&#34;</span>..., 414, MSG_NOSIGNAL, NULL, 0<span style="color:#f92672">)</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">414</span>
-poll<span style="color:#f92672">([{</span>fd<span style="color:#f92672">=</span>5, events<span style="color:#f92672">=</span>POLLIN|POLLERR<span style="color:#f92672">}]</span>, 1, -1<span style="color:#f92672">)</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">([{</span>fd<span style="color:#f92672">=</span>5, revents<span style="color:#f92672">=</span>POLLIN<span style="color:#f92672">}])</span>
-recvfrom<span style="color:#f92672">(</span>5, <span style="color:#e6db74">&#34;T\0\0\1&lt;\0\ntasks_task_id\0\0\3\4\271\0\1\0\0\v\206\0&#34;</span>..., 16384, 0, NULL, NULL<span style="color:#f92672">)</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">337</span>
-<span style="color:#66d9ef">select</span><span style="color:#f92672">(</span>0, NULL, NULL, NULL, <span style="color:#f92672">{</span>tv_sec<span style="color:#f92672">=</span>2, tv_usec<span style="color:#f92672">=</span>0<span style="color:#f92672">}</span>^Cstrace: Process <span style="color:#ae81ff">9</span> detached
- &lt;detached ...&gt;
-</code></pre></div><p>Ну тут идут какие-то запросы. Берём дальше <code>pid=780</code>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ strace -p <span style="color:#ae81ff">780</span>
-strace: Process <span style="color:#ae81ff">780</span> attached
-read<span style="color:#f92672">(</span>4,
-</code></pre></div><p>Во. Программа висит на инструкции чтения только не пойми какой. Ставим для отладки на боевую поду gdb прямо в контейнер с питоновскими модулями.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ apt-get update
-$ apt install gdb python3-dbg python3-dev -y
-</code></pre></div><p>Проверяем, что питоновский модуль подключился к gdb. Должно вывестись &ldquo;ok&rdquo;:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ gdb -ex <span style="color:#e6db74">&#39;python print(&#34;ok&#34;)&#39;</span> -ex quit | tail -n <span style="color:#ae81ff">1</span>
-</code></pre></div><p>Подключаемся к программе по pid=780.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ gdb -p <span style="color:#ae81ff">780</span>
-</code></pre></div><p>Загружаются модули и появляется приветственное сообщение.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#f92672">(</span>gdb<span style="color:#f92672">)</span> bt
-</code></pre></div><p>Команда покажет сишный стек, который мало что скажет где у нас программа зависла.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ strace -p <span style="color:#ae81ff">9</span>
+</span></span><span style="display:flex;"><span>strace: Process <span style="color:#ae81ff">9</span> attached
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">select</span><span style="color:#f92672">(</span>0, NULL, NULL, NULL, <span style="color:#f92672">{</span>tv_sec<span style="color:#f92672">=</span>1, tv_usec<span style="color:#f92672">=</span>22746<span style="color:#f92672">})</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">(</span>Timeout<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>getpid<span style="color:#f92672">()</span>                                <span style="color:#f92672">=</span> <span style="color:#ae81ff">9</span>
+</span></span><span style="display:flex;"><span>write<span style="color:#f92672">(</span>2, <span style="color:#e6db74">&#34;2020-03-04 19:10:43,932 nlab.arm&#34;</span>..., 80<span style="color:#f92672">)</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">80</span>
+</span></span><span style="display:flex;"><span>sendto<span style="color:#f92672">(</span>5, <span style="color:#e6db74">&#34;Q\0\0\1\235SELECT tasks.task_id AS tas&#34;</span>..., 414, MSG_NOSIGNAL, NULL, 0<span style="color:#f92672">)</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">414</span>
+</span></span><span style="display:flex;"><span>poll<span style="color:#f92672">([{</span>fd<span style="color:#f92672">=</span>5, events<span style="color:#f92672">=</span>POLLIN|POLLERR<span style="color:#f92672">}]</span>, 1, -1<span style="color:#f92672">)</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">([{</span>fd<span style="color:#f92672">=</span>5, revents<span style="color:#f92672">=</span>POLLIN<span style="color:#f92672">}])</span>
+</span></span><span style="display:flex;"><span>recvfrom<span style="color:#f92672">(</span>5, <span style="color:#e6db74">&#34;T\0\0\1&lt;\0\ntasks_task_id\0\0\3\4\271\0\1\0\0\v\206\0&#34;</span>..., 16384, 0, NULL, NULL<span style="color:#f92672">)</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">337</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">select</span><span style="color:#f92672">(</span>0, NULL, NULL, NULL, <span style="color:#f92672">{</span>tv_sec<span style="color:#f92672">=</span>2, tv_usec<span style="color:#f92672">=</span>0<span style="color:#f92672">})</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">(</span>Timeout<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>getpid<span style="color:#f92672">()</span>                                <span style="color:#f92672">=</span> <span style="color:#ae81ff">9</span>
+</span></span><span style="display:flex;"><span>write<span style="color:#f92672">(</span>2, <span style="color:#e6db74">&#34;2020-03-04 19:10:45,940 nlab.arm&#34;</span>..., 80<span style="color:#f92672">)</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">80</span>
+</span></span><span style="display:flex;"><span>sendto<span style="color:#f92672">(</span>5, <span style="color:#e6db74">&#34;Q\0\0\1\235SELECT tasks.task_id AS tas&#34;</span>..., 414, MSG_NOSIGNAL, NULL, 0<span style="color:#f92672">)</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">414</span>
+</span></span><span style="display:flex;"><span>poll<span style="color:#f92672">([{</span>fd<span style="color:#f92672">=</span>5, events<span style="color:#f92672">=</span>POLLIN|POLLERR<span style="color:#f92672">}]</span>, 1, -1<span style="color:#f92672">)</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">([{</span>fd<span style="color:#f92672">=</span>5, revents<span style="color:#f92672">=</span>POLLIN<span style="color:#f92672">}])</span>
+</span></span><span style="display:flex;"><span>recvfrom<span style="color:#f92672">(</span>5, <span style="color:#e6db74">&#34;T\0\0\1&lt;\0\ntasks_task_id\0\0\3\4\271\0\1\0\0\v\206\0&#34;</span>..., 16384, 0, NULL, NULL<span style="color:#f92672">)</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">337</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">select</span><span style="color:#f92672">(</span>0, NULL, NULL, NULL, <span style="color:#f92672">{</span>tv_sec<span style="color:#f92672">=</span>2, tv_usec<span style="color:#f92672">=</span>0<span style="color:#f92672">}</span>^Cstrace: Process <span style="color:#ae81ff">9</span> detached
+</span></span><span style="display:flex;"><span> &lt;detached ...&gt;
+</span></span></code></pre></div><p>Ну тут идут какие-то запросы. Берём дальше <code>pid=780</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ strace -p <span style="color:#ae81ff">780</span>
+</span></span><span style="display:flex;"><span>strace: Process <span style="color:#ae81ff">780</span> attached
+</span></span><span style="display:flex;"><span>read<span style="color:#f92672">(</span>4,
+</span></span></code></pre></div><p>Во. Программа висит на инструкции чтения только не пойми какой. Ставим для отладки на боевую поду gdb прямо в контейнер с питоновскими модулями.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ apt-get update
+</span></span><span style="display:flex;"><span>$ apt install gdb python3-dbg python3-dev -y
+</span></span></code></pre></div><p>Проверяем, что питоновский модуль подключился к gdb. Должно вывестись &ldquo;ok&rdquo;:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ gdb -ex <span style="color:#e6db74">&#39;python print(&#34;ok&#34;)&#39;</span> -ex quit | tail -n <span style="color:#ae81ff">1</span>
+</span></span></code></pre></div><p>Подключаемся к программе по pid=780.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ gdb -p <span style="color:#ae81ff">780</span>
+</span></span></code></pre></div><p>Загружаются модули и появляется приветственное сообщение.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">(</span>gdb<span style="color:#f92672">)</span> bt
+</span></span></code></pre></div><p>Команда покажет сишный стек, который мало что скажет где у нас программа зависла.</p>
 <p>Нужно загрузить инструкции для питоновой отладки. У меня Python 3.7 поэтому путь такой:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">source /usr/share/gdb/auto-load/usr/bin/python3.7-gdb.py
-</code></pre></div><p>Вызываем питоновский стектрейс:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#f92672">(</span>gdb<span style="color:#f92672">)</span> py-bt
-</code></pre></div><p>Показывает текущий стектрейс и место зависания:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">Traceback <span style="color:#f92672">(</span>most recent call first<span style="color:#f92672">)</span>:
-  &lt;built-in method read of module object at remote 0x7f0a2609d230&gt;
-  <span style="color:#f92672">(</span>frame information optimized out<span style="color:#f92672">)</span>
-  <span style="color:#f92672">(</span>frame information optimized out<span style="color:#f92672">)</span>
-  <span style="color:#f92672">(</span>frame information optimized out<span style="color:#f92672">)</span>
-  File <span style="color:#e6db74">&#34;/usr/local/lib/python3.7/multiprocessing/queues.py&#34;</span>, line 352, in get
-    res <span style="color:#f92672">=</span> self._reader.recv_bytes<span style="color:#f92672">()</span>
-  <span style="color:#f92672">(</span>frame information optimized out<span style="color:#f92672">)</span>
-  File <span style="color:#e6db74">&#34;/usr/local/lib/python3.7/multiprocessing/process.py&#34;</span>, line 99, in run
-    self._target<span style="color:#f92672">(</span>*self._args, **self._kwargs<span style="color:#f92672">)</span>
-  File <span style="color:#e6db74">&#34;/usr/local/lib/python3.7/multiprocessing/process.py&#34;</span>, line 297, in _bootstrap
-    self.run<span style="color:#f92672">()</span>
-  File <span style="color:#e6db74">&#34;/usr/local/lib/python3.7/multiprocessing/popen_fork.py&#34;</span>, line 74, in _launch
-    code <span style="color:#f92672">=</span> process_obj._bootstrap<span style="color:#f92672">()</span>
-  File <span style="color:#e6db74">&#34;/usr/local/lib/python3.7/multiprocessing/popen_fork.py&#34;</span>, line 20, in __init__
-    self._launch<span style="color:#f92672">(</span>process_obj<span style="color:#f92672">)</span>
-  File <span style="color:#e6db74">&#34;/usr/local/lib/python3.7/multiprocessing/context.py&#34;</span>, line 277, in _Popen
-    <span style="color:#66d9ef">return</span> Popen<span style="color:#f92672">(</span>process_obj<span style="color:#f92672">)</span>
-  File <span style="color:#e6db74">&#34;/usr/local/lib/python3.7/multiprocessing/process.py&#34;</span>, line 112, in start
-    self._popen <span style="color:#f92672">=</span> self._Popen<span style="color:#f92672">(</span>self<span style="color:#f92672">)</span>
-  File <span style="color:#e6db74">&#34;/usr/local/lib/python3.7/multiprocessing/pool.py&#34;</span>, line 241, in _repopulate_pool
-    w.start<span style="color:#f92672">()</span>
-  File <span style="color:#e6db74">&#34;/usr/local/lib/python3.7/multiprocessing/pool.py&#34;</span>, line 248, in _maintain_pool
-    self._repopulate_pool<span style="color:#f92672">()</span>
-  File <span style="color:#e6db74">&#34;/usr/local/lib/python3.7/multiprocessing/pool.py&#34;</span>, line 412, in _handle_workers
-    pool._maintain_pool<span style="color:#f92672">()</span>
-  File <span style="color:#e6db74">&#34;/usr/local/lib/python3.7/threading.py&#34;</span>, line 870, in run
-    self._target<span style="color:#f92672">(</span>*self._args, **self._kwargs<span style="color:#f92672">)</span>
-  File <span style="color:#e6db74">&#34;/usr/local/lib/python3.7/threading.py&#34;</span>, line 926, in _bootstrap_inner
-    self.run<span style="color:#f92672">()</span>
-  File <span style="color:#e6db74">&#34;/usr/local/lib/python3.7/threading.py&#34;</span>, line 890, in _bootstrap
-    self._bootstrap_inner<span style="color:#f92672">()</span>
-</code></pre></div><p>По крайней мере понятнее где примерно искать.
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>source /usr/share/gdb/auto-load/usr/bin/python3.7-gdb.py
+</span></span></code></pre></div><p>Вызываем питоновский стектрейс:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">(</span>gdb<span style="color:#f92672">)</span> py-bt
+</span></span></code></pre></div><p>Показывает текущий стектрейс и место зависания:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Traceback <span style="color:#f92672">(</span>most recent call first<span style="color:#f92672">)</span>:
+</span></span><span style="display:flex;"><span>  &lt;built-in method read of module object at remote 0x7f0a2609d230&gt;
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">(</span>frame information optimized out<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">(</span>frame information optimized out<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">(</span>frame information optimized out<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>  File <span style="color:#e6db74">&#34;/usr/local/lib/python3.7/multiprocessing/queues.py&#34;</span>, line 352, in get
+</span></span><span style="display:flex;"><span>    res <span style="color:#f92672">=</span> self._reader.recv_bytes<span style="color:#f92672">()</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">(</span>frame information optimized out<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>  File <span style="color:#e6db74">&#34;/usr/local/lib/python3.7/multiprocessing/process.py&#34;</span>, line 99, in run
+</span></span><span style="display:flex;"><span>    self._target<span style="color:#f92672">(</span>*self._args, **self._kwargs<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>  File <span style="color:#e6db74">&#34;/usr/local/lib/python3.7/multiprocessing/process.py&#34;</span>, line 297, in _bootstrap
+</span></span><span style="display:flex;"><span>    self.run<span style="color:#f92672">()</span>
+</span></span><span style="display:flex;"><span>  File <span style="color:#e6db74">&#34;/usr/local/lib/python3.7/multiprocessing/popen_fork.py&#34;</span>, line 74, in _launch
+</span></span><span style="display:flex;"><span>    code <span style="color:#f92672">=</span> process_obj._bootstrap<span style="color:#f92672">()</span>
+</span></span><span style="display:flex;"><span>  File <span style="color:#e6db74">&#34;/usr/local/lib/python3.7/multiprocessing/popen_fork.py&#34;</span>, line 20, in __init__
+</span></span><span style="display:flex;"><span>    self._launch<span style="color:#f92672">(</span>process_obj<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>  File <span style="color:#e6db74">&#34;/usr/local/lib/python3.7/multiprocessing/context.py&#34;</span>, line 277, in _Popen
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> Popen<span style="color:#f92672">(</span>process_obj<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>  File <span style="color:#e6db74">&#34;/usr/local/lib/python3.7/multiprocessing/process.py&#34;</span>, line 112, in start
+</span></span><span style="display:flex;"><span>    self._popen <span style="color:#f92672">=</span> self._Popen<span style="color:#f92672">(</span>self<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>  File <span style="color:#e6db74">&#34;/usr/local/lib/python3.7/multiprocessing/pool.py&#34;</span>, line 241, in _repopulate_pool
+</span></span><span style="display:flex;"><span>    w.start<span style="color:#f92672">()</span>
+</span></span><span style="display:flex;"><span>  File <span style="color:#e6db74">&#34;/usr/local/lib/python3.7/multiprocessing/pool.py&#34;</span>, line 248, in _maintain_pool
+</span></span><span style="display:flex;"><span>    self._repopulate_pool<span style="color:#f92672">()</span>
+</span></span><span style="display:flex;"><span>  File <span style="color:#e6db74">&#34;/usr/local/lib/python3.7/multiprocessing/pool.py&#34;</span>, line 412, in _handle_workers
+</span></span><span style="display:flex;"><span>    pool._maintain_pool<span style="color:#f92672">()</span>
+</span></span><span style="display:flex;"><span>  File <span style="color:#e6db74">&#34;/usr/local/lib/python3.7/threading.py&#34;</span>, line 870, in run
+</span></span><span style="display:flex;"><span>    self._target<span style="color:#f92672">(</span>*self._args, **self._kwargs<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>  File <span style="color:#e6db74">&#34;/usr/local/lib/python3.7/threading.py&#34;</span>, line 926, in _bootstrap_inner
+</span></span><span style="display:flex;"><span>    self.run<span style="color:#f92672">()</span>
+</span></span><span style="display:flex;"><span>  File <span style="color:#e6db74">&#34;/usr/local/lib/python3.7/threading.py&#34;</span>, line 890, in _bootstrap
+</span></span><span style="display:flex;"><span>    self._bootstrap_inner<span style="color:#f92672">()</span>
+</span></span></code></pre></div><p>По крайней мере понятнее где примерно искать.
 Вспоминаем что в месте с запуском процесса и одновременным чтением потока данных может быть что-то интересное вроде дедлока и проверяем.</p>
 <p>Например в данном случае при использовании <code>Popen.wait()</code> есть замечание:</p>
 <blockquote>
 <p>Warning Use communicate() rather than .stdin.write, .stdout.read or .stderr.read to avoid deadlocks due to any of the other OS pipe buffers filling up and blocking the child process.</p>
 </blockquote>
 <p>Вот эти команды у меня не заработали с моим бинарем, но они показывают соответственно код рядом с текущей инструкцией и локальные переменные.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#f92672">(</span>gdb<span style="color:#f92672">)</span> py-list
-<span style="color:#f92672">(</span>gdb<span style="color:#f92672">)</span> py-locals
-</code></pre></div><h2 id="references">References</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">(</span>gdb<span style="color:#f92672">)</span> py-list
+</span></span><span style="display:flex;"><span><span style="color:#f92672">(</span>gdb<span style="color:#f92672">)</span> py-locals
+</span></span></code></pre></div><h2 id="references">References</h2>
 <p>Самая классная презентация про gdb + python. В остальных очень куцо и не поясняет что делать если что-то не грузится.
 <a href="https://www.slideshare.net/amd4ever/debugging-python-with-gdb">https://www.slideshare.net/amd4ever/debugging-python-with-gdb</a> (Осторожно! ОРоскомнадзорено)</p>
 <p>Ещё про доступные команды есть здесь:
 <a href="https://devguide.python.org/gdb/">https://devguide.python.org/gdb/</a></p>
 
+
+    
+
+    <hr>
+    <h6>
+      I'm Alex writing about technical and management things.<br>
+
+      Comments and email subscription on <a href="https://wholesystems.substack.com/" target="_blank">my Substack</a>.<br>
+
+      And feel free to write me at <a href="mailto:me@aptakhin.name">me@aptakhin.name</a><br>
+    </h6>
+    
   </section>
+
   <footer>
     
     <nav class="p-pagination c-pagination">
@@ -233,6 +246,7 @@ $ apt install gdb python3-dbg python3-dev -y
         </div>
       </div>
     </nav>
+
     
 
 

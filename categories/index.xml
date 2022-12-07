@@ -6,11 +6,7 @@
     <description>Recent content in Categories on Alex Ptakhin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 18 Aug 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://aptakhin.name/categories/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 18 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://aptakhin.name/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>codereview</title>
       <link>https://aptakhin.name/categories/codereview/</link>

@@ -6,11 +6,7 @@
     <description>Recent content in podlodka on Alex Ptakhin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 18 Aug 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://aptakhin.name/tags/podlodka/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 18 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://aptakhin.name/tags/podlodka/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[ru] Кодревью</title>
       <link>https://aptakhin.name/posts/2020/codereview-summary/</link>
@@ -18,8 +14,8 @@
       
       <guid>https://aptakhin.name/posts/2020/codereview-summary/</guid>
       <description>Дисклеймер: ниже заметки субъективных ключевых мест с краткостью записи для себя, оригинал видео рекомендуется к просмотру. Оригинал обсуждения здесь: https://www.youtube.com/watch?v=IDj3x__YZgE
-Зачем код ревью  Соответствует ли код требованиям в ТЗ Побочные эффекты. Проблемы в других функциях Читаемость. Странные именования Консистентность общему стилю Оптимальность Чистота Повторное использование существующего кода. Агрессивно DRY Соответствие архитектурного изменения Проверка сценариев тестирования  Плюсы:
- Уменьшение числа дефектов и увеличение качества кода Совместное владение кодом и бест практик  Проблемы Дорого.</description>
+Зачем код ревью Соответствует ли код требованиям в ТЗ Побочные эффекты. Проблемы в других функциях Читаемость. Странные именования Консистентность общему стилю Оптимальность Чистота Повторное использование существующего кода. Агрессивно DRY Соответствие архитектурного изменения Проверка сценариев тестирования Плюсы:
+Уменьшение числа дефектов и увеличение качества кода Совместное владение кодом и бест практик Проблемы Дорого.</description>
     </item>
     
   </channel>

@@ -6,10 +6,16 @@
     <description>Recent content on Alex Ptakhin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 10 May 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://aptakhin.name/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Wed, 07 Dec 2022 14:10:42 +0100</lastBuildDate><atom:link href="https://aptakhin.name/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Lot of Work, Reflection and Education</title>
+      <link>https://aptakhin.name/posts/2022/a-lot-of-work-reflection-and-education/</link>
+      <pubDate>Wed, 07 Dec 2022 14:10:42 +0100</pubDate>
+      
+      <guid>https://aptakhin.name/posts/2022/a-lot-of-work-reflection-and-education/</guid>
+      <description>From my career, I have very subjective experience, but very common from startups and middle-sized to big tech companies. Overloaded everyone from linear managers and above to c-level. Hectic calendars. Many calls and meetings. Often making anything except important and not in-hurry a. And really lack time to think, only to decide.
+Even worse, often it&amp;rsquo;s much work because some time ago it was solutions to problems, which were decided to do in the company: how people interact with each other, what is flow from ideas to customer delivery, what are internal steps in the flow.</description>
+    </item>
     
     <item>
       <title>Less-complexity &amp; Fast Feedback Teams</title>
@@ -19,7 +25,7 @@
       <guid>https://aptakhin.name/posts/2022/less-complexity-and-fast-feedback-teams/</guid>
       <description>My goal: bring the idea of basic rules about systems. And nudge to think about the decision effects.
 Audience: senior engineers, engineering managers, and product/project managers.
- There are many overcomplications in the Tech industry regarding how to work well. There are too many “new” concepts, manyP bestseller books, many conferences and many talks with some “new” ideas. We think we missing something we run into it trying to implement things without going deeper into some basis.</description>
+There are many overcomplications in the Tech industry regarding how to work well. There are too many “new” concepts, manyP bestseller books, many conferences and many talks with some “new” ideas. We think we missing something we run into it trying to implement things without going deeper into some basis.</description>
     </item>
     
     <item>
@@ -29,8 +35,8 @@ Audience: senior engineers, engineering managers, and product/project managers.
       
       <guid>https://aptakhin.name/posts/2020/codereview-summary/</guid>
       <description>Дисклеймер: ниже заметки субъективных ключевых мест с краткостью записи для себя, оригинал видео рекомендуется к просмотру. Оригинал обсуждения здесь: https://www.youtube.com/watch?v=IDj3x__YZgE
-Зачем код ревью  Соответствует ли код требованиям в ТЗ Побочные эффекты. Проблемы в других функциях Читаемость. Странные именования Консистентность общему стилю Оптимальность Чистота Повторное использование существующего кода. Агрессивно DRY Соответствие архитектурного изменения Проверка сценариев тестирования  Плюсы:
- Уменьшение числа дефектов и увеличение качества кода Совместное владение кодом и бест практик  Проблемы Дорого.</description>
+Зачем код ревью Соответствует ли код требованиям в ТЗ Побочные эффекты. Проблемы в других функциях Читаемость. Странные именования Консистентность общему стилю Оптимальность Чистота Повторное использование существующего кода. Агрессивно DRY Соответствие архитектурного изменения Проверка сценариев тестирования Плюсы:
+Уменьшение числа дефектов и увеличение качества кода Совместное владение кодом и бест практик Проблемы Дорого.</description>
     </item>
     
     <item>
@@ -51,7 +57,7 @@ $ top top - 19:00:06 up 22 days, 10:42, 0 users, load average: 0.79, 0.89, 1.11 
       <pubDate>Sun, 10 May 2020 00:00:00 +0000</pubDate>
       
       <guid>https://aptakhin.name/cv/</guid>
-      <description>Alex Ptakhin   Email me@aptakhin.name / Mobile +49 151 207 230 26   Linkedin linkedin.com/in/aptakhin / Github github.com/aptakhin   Summary Strong full-stack and backend developer experience focusing on minding out of job positions for customer happiness. Have experience with designing and supporting highly loaded services and tech-leading up to 4 developers. Encouraging and facilitating open-minded team discussions for an outgoing team atmosphere and achieving goals.  Experience September 2022 – now2 months Senior Python Fullstack Developer, Berlin  Prestatech – b2b company smartlending solutions.</description>
+      <description>Alex PtakhinEmail me@aptakhin.name / Mobile +49 151 207 230 26Linkedin linkedin.com/in/aptakhin / Github github.com/aptakhinSummaryStrong full-stack and backend developer experience focusing on minding out of job positions for customer happiness. Have experience with designing and supporting highly loaded services and tech-leading up to 4 developers. Encouraging and facilitating open-minded team discussions for an outgoing team atmosphere and achieving goals.ExperienceSeptember 2022 – now2 monthsSenior Python Fullstack Developer, BerlinPrestatech – b2b company smartlending solutions.</description>
     </item>
     
     <item>
@@ -60,7 +66,7 @@ $ top top - 19:00:06 up 22 days, 10:42, 0 users, load average: 0.79, 0.89, 1.11 
       <pubDate>Sun, 10 May 2020 00:00:00 +0000</pubDate>
       
       <guid>https://aptakhin.name/cv-ru/</guid>
-      <description>Птахин Александр 30 лет, Москва, для связи: me@aptakhin.name // обновил резюме в июле 2022 Позиция: тимлид разработчиков Python3 Навыки  Основные языки: Python3 Менее активные: JavaScript, C++ Руководство: 1-4 мидл разработчиками  Сейчас  Admitad Global, Руководитель группы, Москва, декабрь 2020 - май 2022  Ответственность за продукты и команду: внутренний DWH в компании, сервисы антифрода, сервис выдачи товарных фидов Донастройка процессов команды и найма, публичные метрики delivery, создание базы знаний по процессам Работа с людьми: наём и развитие Наладка стабильной поставки сущностей: механизмы доотправки, контрактование с консалтингом.</description>
+      <description>Птахин Александр30 лет, Москва, для связи: me@aptakhin.name // обновил резюме в июле 2022Позиция: тимлид разработчиков Python3НавыкиОсновные языки: Python3Менее активные: JavaScript, C++Руководство: 1-4 мидл разработчикамиСейчасAdmitad Global, Руководитель группы, Москва, декабрь 2020 - май 2022Ответственность за продукты и команду: внутренний DWH в компании, сервисы антифрода, сервис выдачи товарных фидовДонастройка процессов команды и найма, публичные метрики delivery, создание базы знаний по процессамРабота с людьми: наём и развитиеНаладка стабильной поставки сущностей: механизмы доотправки, контрактование с консалтингом.</description>
     </item>
     
   </channel>
