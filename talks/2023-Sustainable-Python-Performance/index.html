@@ -123,6 +123,8 @@ h1, h2, h3, h4 {
 .central-image {
     width: 32em;
 }
+
+.py-repl-output { display: none; }
 </style>
 
 <script>
@@ -283,7 +285,8 @@ Conclusion (3 min)
 </div>
 
 <div class="pres-scene pres-scene--choosen">
-    <h2 class="first">Python Web Performance 101: Uncovering the root causes</h2>
+    <h2 class="first">Sustainable Python Performance</h2>
+    <h3 class="first">Uncovering the root causes</h3>
 
     <h3 class="first">First almost white screen</h2>
 
@@ -291,7 +294,8 @@ Conclusion (3 min)
 </div>
 
 <div class="pres-scene">
-    <h2 class="first">Python Web Performance 101: Uncovering the root causes</h2>
+    <h2 class="first">Sustainable Python Performance</h2>
+    <h3 class="first">Uncovering the root causes</h3>
 
     <h3 class="first">Second almost white screen</h2>
 
@@ -299,12 +303,13 @@ Conclusion (3 min)
 </div>
 
 <div class="pres-scene">
-    <h2 class="first">Python Web Performance 101: Uncovering the root causes</h2>
+    <h2 class="first">Sustainable Python Performance</h2>
+    <h3 class="first">Uncovering the root causes</h3>
 
     <h4 class="left">By Alex Ptakhin</h4>
-    <h4 class="left">Senior Software Engineer at <a href="https://prestatech.com/" _target="blank">Prestatech GmbH</a>, Berlin</h4>
+    <h4 class="left">Tech Lead at <a href="https://prestatech.com/" _target="blank">Prestatech GmbH</a>, Berlin</h4>
 
-    <h4 class="left" style="margin-bottom: 0.5em;">Github</h4>
+    <h4 class="left" style="margin-bottom: 0.5em;">Latest slides</h4>
     <img src="./img/qrcode-github-talk.png" width="200" height="200" class="left" />
 </div>
 
@@ -344,7 +349,7 @@ Conclusion (3 min)
     </div>
 
     <div class="pres-speech">
-        David
+
     </div>
 </div>
 
@@ -364,7 +369,7 @@ Conclusion (3 min)
     <h3 class="topic">Scale-up: more CPU, more RAM</h3>
 
     <div class="pres-speech">
-        Now David has time to debug
+        Now we have time to debug
     </div>
 </div>
 
@@ -498,10 +503,8 @@ $ snakeviz out/cpu-intensive-program.prof</code></pre>
 
 <div class="pres-scene">
     <h2 class="topic">py-spy</h2>
-    <ul>
-        <li>Sampling profiler</li>
-        <li>Requires development environment</li>
-    </ul>
+
+    Sampling profiler. Requires development environment
 </div>
 
 <div class="pres-scene">
@@ -540,6 +543,14 @@ $ snakeviz out/asyncio_yappi.prof</code></pre>
 </div>
 
 <div class="pres-scene">
+    <h2 class="topic">Problem found</h2>
+    <ul>
+        <li>With bigger data stored</li>
+        <li>We catched not obvious iterating through many documents.</li>
+    </ul>
+</div>
+
+<div class="pres-scene">
     <h2 class="topic">After a few days</h2>
 
     <div class="pres-speech">
@@ -565,6 +576,12 @@ $ snakeviz out/asyncio_yappi.prof</code></pre>
     <h2 class="topic">Temporary solution</h3>
 
     <h3 class="topic">Restart every N requests</h3>
+</div>
+
+<div class="pres-scene">
+    <h2 class="topic">Temporary solution</h3>
+
+    <h3 class="topic">Restart every N requests. <s>Can be also good for the permanent solution :)</s></h3>
 </div>
 
 <div class="pres-scene">
@@ -665,6 +682,14 @@ $ # ... out/memray-flamegraph-memray.html</code></pre>
 </div>
 
 <div class="pres-scene">
+    <h2 class="topic">memray</h2>
+    <ul>
+        <li>Looks promising</li>
+        <li>No Windows support</li>
+    </ul>
+</div>
+
+<div class="pres-scene">
     <h2 class="topic">IO</h2>
 </div>
 
@@ -678,6 +703,56 @@ $ # ... out/memray-flamegraph-memray.html</code></pre>
         <li>Scale up</li>
         <li>Scale out</li>
         <li>Network</li>
+    </ul>
+</div>
+
+<div class="pres-scene">
+    <h2 class="topic">But it's not the whole story</h2>
+</div>
+
+<div class="pres-scene">
+    <h2 class="topic">Problems continue happening</h2>
+</div>
+
+<div class="pres-scene">
+    <h2 class="topic">Follow-up: what to do on regular basis?</h2>
+    <ul>
+        <li>Benchmark in pipelines</li>
+    </ul>
+</div>
+
+<div class="pres-scene">
+    <h2 class="topic">Follow-up: what to do on regular basis?</h2>
+    <ul>
+        <li>Benchmark in CI pipelines</li>
+        <ul>
+            <li>pyperf https://pyperf.readthedocs.io/en/latest/</li>
+        </ul>
+    </ul>
+</div>
+
+<div class="pres-scene">
+    <h2 class="topic">Follow-up: what to do on regular basis?</h2>
+    <ul>
+        <li>Benchmark in CI pipelines</li>
+        <ul>
+            <li>pyperf https://pyperf.readthedocs.io/en/latest/</li>
+            <li>pytest-benchmark https://pytest-benchmark.readthedocs.io/en/latest/</li>
+        </ul>
+    </ul>
+</div>
+
+<div class="pres-scene">
+    <h2 class="topic">Follow-up: what to do on regular basis?</h2>
+    <ul>
+        <li>Benchmark in CI pipelines</li>
+        <ul>
+            <li>pyperf https://pyperf.readthedocs.io/en/latest/</li>
+            <li>pytest-benchmark https://pytest-benchmark.readthedocs.io/en/latest/</li>
+            <li>codspeed https://codspeed.io/</li>
+        </ul>
+
+        <li>Monitor production</li>
     </ul>
 </div>
 
@@ -725,13 +800,27 @@ $ # ... out/memray-flamegraph-memray.html</code></pre>
     <py-terminal></py-terminal>
 </div>
 
-
 <div class="pres-scene">
     <h2 class="topic">Open Telemetry</h2>
 
     <p style="text-align: center">Multiply vendors, e.g. Grafana.</p>
 
     <img src="./img/grafana.png" class="central central-image" />
+</div>
+
+<div class="pres-scene">
+    <h2 class="topic">Alternatives</h2>
+
+    <p style="text-align: center">Grafana Stack: Loki, Prometheus.</p>
+
+</div>
+
+<div class="pres-scene">
+    <h2 class="topic">Alternatives</h2>
+
+    <p style="text-align: center">Grafana Stack: Loki, Prometheus.</p>
+    <p style="text-align: center">Cloud intrumentation.</p>
+
 </div>
 
 <div class="pres-scene">
@@ -750,6 +839,15 @@ $ # ... out/memray-flamegraph-memray.html</code></pre>
     <ul>
         <li>Worth to have a chance win some time with resources</li>
         <li>Monitor application errors</li>
+    </ul>
+</div>
+
+<div class="pres-scene">
+    <h2 class="topic">3 things to remember</h2>
+    <ul>
+        <li>Worth to have a chance win some time with resources</li>
+        <li>Monitor application errors</li>
+        <li>Measuring something can change the behaviour of the system</li>
     </ul>
 </div>
 
@@ -770,14 +868,17 @@ $ # ... out/memray-flamegraph-memray.html</code></pre>
     <ul>
         <li><a href="https://pyscript.net" target="_blank">PyScript</a> for empowering the presentation <img src="./img/pyscript-sticker-black.svg" width="50" class="left" style="position: relative; top: 3pt;" /></li>
         <li><a href="https://highlightjs.org" target="_blank">highlight.js</a> for syntax highlighting</li>
-        <li><a href="https:/playwright.com" target="_blank">playwright</a> for help with PDF slides</li>
-        <li><a href="https://prestatech.com" target="_blank">Prestatech GmbH</a> for support this talk (and we are hiring)</li>
+        <li><a href="https://prestatech.com" target="_blank">Prestatech GmbH</a> for this talk support</li>
     </ul>
 
-    <p>By Alex Ptakhin, Senior Software Engineer at <a href="https://prestatech.com/" _target="blank">Prestatech GmbH</a>, Berlin. <a href="mailto:me@aptakhin.name" target="_blank">me@aptakhin.name</a> / <a href="https://github.com/aptakhin" target="_blank">github.com/aptakhin</a> / <a href="https://twitter.com/aptakhin" target="_blank">twitter.com/aptakhin</a> / <a href="https://hachyderm.io/@AlexPtakhin" target="_blank">hachyderm.io/@AlexPtakhin</a></li> / <a href="https://linkedin.com/in/aptakhin" target="_blank">linkedin.com/in/aptakhin</a>
+    <p>By Alex Ptakhin, Tech Lead at <a href="https://prestatech.com/" _target="blank">Prestatech GmbH</a>, Berlin. <a href="mailto:me@aptakhin.name" target="_blank">me@aptakhin.name</a> / <a href="https://github.com/aptakhin" target="_blank">github.com/aptakhin</a> / <a href="https://twitter.com/aptakhin" target="_blank">twitter.com/aptakhin</a> / <a href="https://hachyderm.io/@AlexPtakhin" target="_blank">hachyderm.io/@AlexPtakhin</a></li> / <a href="https://linkedin.com/in/aptakhin" target="_blank">linkedin.com/in/aptakhin</a>
     </p>
 
-    <p>Presentation sources: <a href="https://github.com/aptakhin/talks/blob/make-python-web-performance-101/2023-Python-Web-Performance-101/index.html" target="_blank">github.com/aptakhin/talks/2023-Python-Web-Performance-101</a></p>
+    <p>Presentation sources: <a href="https://github.com/aptakhin/aptakhin.github.io/blob/master/talks/2023-Sustainable-Python-Performance/index.html" target="_blank">https://github.com/aptakhin/aptakhin.github.io/blob/master/talks/2023-Sustainable-Python-Performance/index.html</a></p>
+
+    <h4 class="left" style="margin-bottom: 0.5em;">Latest slides</h4>
+    <p><a href="https://aptakhin.name/talks/2023-Sustainable-Python-Performance/" target="_blank">https://aptakhin.name/talks/2023-Sustainable-Python-Performance/</a></p>
+
     <img src="./img/qrcode-github-talk.png" width="200" height="200" class="left" />
 </div>
 
