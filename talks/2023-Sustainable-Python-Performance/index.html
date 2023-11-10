@@ -39,7 +39,6 @@ files = ["ram_intensive_program.py"]
 from = "./load"
 files = ["ram_intensive_dummy_program.py"]
 
-
 [[fetch]]
 from = "./"
 files = ["calls.py"]
@@ -504,7 +503,9 @@ $ snakeviz out/cpu-intensive-program.prof</code></pre>
 <div class="pres-scene">
     <h2 class="topic">py-spy</h2>
 
-    Sampling profiler. Requires development environment
+    <ul>
+        <li>Sampling profiler. Requires development environment</li>
+    </ul>
 </div>
 
 <div class="pres-scene">
@@ -546,7 +547,7 @@ $ snakeviz out/asyncio_yappi.prof</code></pre>
     <h2 class="topic">Problem found</h2>
     <ul>
         <li>With bigger data stored</li>
-        <li>We catched not obvious iterating through many documents.</li>
+        <li>We catched not obvious iteration through many documents</li>
     </ul>
 </div>
 
@@ -581,7 +582,7 @@ $ snakeviz out/asyncio_yappi.prof</code></pre>
 <div class="pres-scene">
     <h2 class="topic">Temporary solution</h3>
 
-    <h3 class="topic">Restart every N requests. <s>Can be also good for the permanent solution :)</s></h3>
+    <h3 class="topic">Restart every N requests<br><s>Might be also good for the permanent solution :)</s></h3>
 </div>
 
 <div class="pres-scene">
@@ -593,6 +594,21 @@ $ snakeviz out/asyncio_yappi.prof</code></pre>
         print(f'Empty dict size: {sys.getsizeof({})}')
         print(f'Empty list size: {sys.getsizeof([])}')
         print(f'Empty set size: {sys.getsizeof(set())}')
+    </py-repl>
+
+    <py-terminal></py-terminal>
+</div>
+
+<div class="pres-scene">
+    <h2 class="topic">sys.getsizeof</h2>
+
+    <py-repl>
+        import sys
+
+        print(f'Empty list size: {sys.getsizeof([])}')
+
+        lorem = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vitae nisl nisi. Donec malesuada luctus diam ac lacinia. Suspendisse porta dolor sem, id semper nibh tempor a. Proin porttitor nulla nec risus sollicitudin semper. Sed at lectus ante. Curabitur venenatis interdum malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut nisl rhoncus, laoreet diam et, blandit elit. Maecenas non quam dictum, ullamcorper massa ac, egestas tortor. Suspendisse venenatis leo nisl, vel mollis turpis consequat nec. Suspendisse lobortis auctor ante id condimentum. In porta, dui ultricies placerat dapibus, lorem ante euismod mi, et pretium lectus lorem fringilla mauris. Mauris aliquet, odio ac euismod mollis, lacus dolor accumsan velit, eu dignissim felis arcu eu ex. Nunc consectetur et sapien non iaculis. Sed dictum tellus velit.'
+        print(f'List with long string size: {sys.getsizeof([lorem])}')
     </py-repl>
 
     <py-terminal></py-terminal>
@@ -717,7 +733,7 @@ $ # ... out/memray-flamegraph-memray.html</code></pre>
 <div class="pres-scene">
     <h2 class="topic">Follow-up: what to do on regular basis?</h2>
     <ul>
-        <li>Benchmark in pipelines</li>
+        <li>Benchmark in CI pipelines</li>
     </ul>
 </div>
 
@@ -874,8 +890,6 @@ $ # ... out/memray-flamegraph-memray.html</code></pre>
 
     <p>By Alex Ptakhin, Tech Lead at <a href="https://prestatech.com/" _target="blank">Prestatech GmbH</a>, Berlin. <a href="mailto:me@aptakhin.name" target="_blank">me@aptakhin.name</a> / <a href="https://github.com/aptakhin" target="_blank">github.com/aptakhin</a> / <a href="https://twitter.com/aptakhin" target="_blank">twitter.com/aptakhin</a> / <a href="https://hachyderm.io/@AlexPtakhin" target="_blank">hachyderm.io/@AlexPtakhin</a></li> / <a href="https://linkedin.com/in/aptakhin" target="_blank">linkedin.com/in/aptakhin</a>
     </p>
-
-    <p>Presentation sources: <a href="https://github.com/aptakhin/aptakhin.github.io/blob/master/talks/2023-Sustainable-Python-Performance/index.html" target="_blank">https://github.com/aptakhin/aptakhin.github.io/blob/master/talks/2023-Sustainable-Python-Performance/index.html</a></p>
 
     <h4 class="left" style="margin-bottom: 0.5em;">Latest slides</h4>
     <p><a href="https://aptakhin.name/talks/2023-Sustainable-Python-Performance/" target="_blank">https://aptakhin.name/talks/2023-Sustainable-Python-Performance/</a></p>
