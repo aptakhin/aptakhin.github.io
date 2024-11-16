@@ -1,6 +1,6 @@
 ---
 marp: true
-footer: 'Alexander Ptakhin for PyBerlin 2024 Nov 27'
+footer: 'Alexander Ptakhin for PyBerlin 2024 Nov 27th'
 ---
 
 <!-- theme: uncover -->
@@ -17,21 +17,46 @@ I aim for this talk to offer developers and leads, even those using different fr
 # Hello
 
 The standard slide why I'm expert.
+Around 10 years with Python.
+C++, Python 2, Python 3, JavaScript.
+
+Monolyths, distributed systems.
+
+<!-- note: Not very heavy-loaded, otherwise. why Python -->
+
+<!-- paginate: true -->
 
 # Enterprise?
+
+<!-- Sounds awkward. A little bit boring Java and C# -->
 
 # Enterprise?
 It’s word for boring.
-<!-- paginate: true -->
+
+<!-- note: In the startup it will not boring, you deprecate and break one things, but the new are still not ready -->
+
 
 # he?
 
+- Problems
+- Architecture
+- Design
+- Deployment
+
+
+
+<!-- - We generally don't drop data, but mark DELETED -->
+<!-- - Even in GDPR we left it's DELETED -->
+
+
+<!-- >
 We thought about how to deploy before we started coding.
 How we should organize.
 Which stack shold we go.
 Code organization.
 Folder. Modules.
 Count coupling
+-->
 
 
 # Context
@@ -52,24 +77,68 @@ Developers experience.
 
 # CI/CD
 
+# Tests
+
+Acceptance.
+Integration.
+Unit.
+
+<!-- schema -->
+
+# API Versioning
+
+Versioning of API endpoint.
+Routers.
+
+
+# Acceptance example
+
+cypress call.
+
+# Integration
+
+API calls included. Database included. Sending emails not.
+
+
+# Unit tests
+No dependencies.
+Very fast.
+Fast tests < 10 seconds for Ctrl+S.
+pytest-watcher.
+
+# ptw --now .
+
+# pre-commit
+
+ruff format, ruff check.
+
+# Pipelines pain
+- Everything in bash for pipelines.
+- Run bash or python.
+- Testeable locally
+- Click as less buttons as you can
+- Write as less yaml as you can
+
+
+Weekly releases.
 
 # Bash
-Everything in Bash for pipelines.
-Run bash
+
 
 Pre-commit. Fast tests < 10 seconds, ruff format, ruff check.
 Pipelines: everything longer.
 Costly acceptance cypress tests.
 
-# API Versioning
-
-Everything
-Versioning of APIs.
-Routers.
-
 # Database migrations
 
 Database migrations. Big topic.
+
+We make small changes. We have a few data. We can do anything.
+But on scale it's not true.
+
+Migrate parts by parts.
+
+# Our enterprease stops here.
 
 Better developers learn SQL than ORM.
 But straightforward SQLBuilder is good enough not to start dealing with generation strings %1, %2.
@@ -80,13 +149,37 @@ Auth0. Implement it yourself.
 
 # Depends
 
-Depends, DI.
-States FastAPI.
+Depends, DI. Container.
+
+```python
+async def init() -> None:
+    database = Database(settings.database_dsn)
+    container.register(Database, instance=database)
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    await init()
+    yield
 
 
-Metrics.
-Middleware.
-Decorators.
+app = FastAPI(lifespan=lifespan)
+```
+
+#  Metrics
+
+```python
+
+```
+
+
+# Middleware
+
+- /metrics
+- Decorators
+
+decorators. Endpoints.
+Simple approach. Auth states.
+Router variables?
 Inside login. User.
 
 # Tests
@@ -104,7 +197,7 @@ Is that's all?
 
 Logs:
 JSON
-Pretty print in console
+Pretty print in console.
 
 # Metrics
 
@@ -112,13 +205,21 @@ Prometheus.
 
 # Traces
 
+Helpers install: will make 50% percents
+The rest on us
+
 # Grafana
+
 
 # Docker
 
 Docker compose.
 
 Caching images.
-Pipenv, poetry.
+Pipenv, poetry, uv
 
 # Other
+
+# Contacts
+
+X, Mastodont, Bluesky
