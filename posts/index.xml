@@ -6,7 +6,16 @@
     <description>Recent content in Posts on Alex Ptakhin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 22 Jan 2025 21:32:49 +0100</lastBuildDate><atom:link href="https://aptakhin.name/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 28 Jan 2025 09:36:00 +0100</lastBuildDate><atom:link href="https://aptakhin.name/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Boring Low Performance</title>
+      <link>https://aptakhin.name/posts/2025/boring-low-performance/</link>
+      <pubDate>Tue, 28 Jan 2025 09:36:00 +0100</pubDate>
+      
+      <guid>https://aptakhin.name/posts/2025/boring-low-performance/</guid>
+      <description>Recently, I came across a book about working with low performers, and this topic is discussed in team lead chats. Here&amp;rsquo;s a person who performs poorly, does tasks slowly or incorrectly, and maybe someone else doesn&amp;rsquo;t like the communication. So we put him on a Performance Improvement Plan with some metrics, which, for some reason, we consider objective. And then the person improves or not. If not, then we part ways.</description>
+    </item>
+    
     <item>
       <title>Hiring</title>
       <link>https://aptakhin.name/posts/2025/hiring/</link>
