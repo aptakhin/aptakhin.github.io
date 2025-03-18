@@ -6,7 +6,18 @@
     <description>Recent content on Alex Ptakhin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 07 Feb 2025 16:19:01 +0100</lastBuildDate><atom:link href="https://aptakhin.name/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 18 Mar 2025 18:45:06 +0100</lastBuildDate><atom:link href="https://aptakhin.name/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Metrics, my metrics team</title>
+      <link>https://aptakhin.name/posts/2025/metrics-my-team-metrics/</link>
+      <pubDate>Tue, 18 Mar 2025 18:45:06 +0100</pubDate>
+      
+      <guid>https://aptakhin.name/posts/2025/metrics-my-team-metrics/</guid>
+      <description>In almost all managerial interviews, I was asked about team metrics: How do I know the team is working well? I usually didn&amp;rsquo;t answer cheerfully. So, questions about which metrics are less harmful to examine and which should not be used as targets often occupy my mind.
+Naturally, there will be the classic Goodhart&amp;rsquo;s law here, ‘When a measure becomes a goal, it ceases to be a good measure.’ And Deming&amp;rsquo;s quote, simultaneously, ‘You can&amp;rsquo;t manage what you can&amp;rsquo;t measure.’ And, oops, he didn&amp;rsquo;t say it; he meant something else. In a complex system, if something can be measured, we eventually look only at what is being measured and change it.
+However, there are some internal teams that may want ambitious numbers about what they&amp;rsquo;ll achieve in Q2. The teams are about process improvement: introducing research where there wasn&amp;rsquo;t any, avoiding launching what was bad research into development, and so on.</description>
+    </item>
+    
     <item>
       <title>Published</title>
       <link>https://aptakhin.name/published/</link>
@@ -17,7 +28,11 @@
 [RU] Raising team in crisis – Podlodka Teamlead Crew 2025 Video | Slides on SpeakerDeck.com
 Hiring, interviews and offboarding, co-authored with Veronika Ilina, XTC Berlin 2025 Keypoint Slides only
 Enterprise-ready FastAPI - PyBerlin 2024 PDF Slides only
-[RU] How to grow pythons, observability manual / Как разводить питонов: пособие по observability - Podlodka Python 2023 Video | Google Slides</description>
+[RU] How to grow pythons, observability manual / Как разводить питонов: пособие по observability - Podlodka Python 2023 Video | Google Slides
+Sustainable Python Performance - PyConSWE 2023 Video | PyScript Slides
+Python web performance 101 uncovering the root causes - PyConFr 2023 Video | PDF Slides
+Purpose: What I Learned from Stepping Down as Team Lead Twice - TechLead 2023 Video | PDF Slides
+[RU] How not to hire a developer / Как не нанять себе разработчика - TechRec 2021 Video | PDF Slides</description>
     </item>
     
     <item>
@@ -27,7 +42,8 @@ Enterprise-ready FastAPI - PyBerlin 2024 PDF Slides only
       
       <guid>https://aptakhin.name/posts/2025/for-all-the-good-vs-all-the-bad/</guid>
       <description>I&amp;rsquo;ve often had anxiety light bulbs go off after technical conferences. People were discussing open source, so why am I not doing open source? Everyone is doing Open Source; what am I doing? Or all managers should be generally incompetent and not be stupid in processes or hires.
-This is all partially true—maybe even the industry is in a bad state. Everything needs improvement, rationalization, and communication. And someone like going to make it better, and people are resisting.</description>
+This is all partially true—maybe even the industry is in a bad state. Everything needs improvement, rationalization, and communication. And someone like going to make it better, and people are resisting. So I fight, I fight the system, and the result is self-esteem issues, health issues, burnout, and maybe depression if I push harder. And people looks are annoying too.
+Many things are taken personally, causing frustration and suppressed anger. The questions involve anxiety and safety. I&amp;rsquo;m a bad leader or employee if I&amp;rsquo;m not doing something.</description>
     </item>
     
     <item>
@@ -36,7 +52,9 @@ This is all partially true—maybe even the industry is in a bad state. Everythi
       <pubDate>Tue, 28 Jan 2025 09:36:00 +0100</pubDate>
       
       <guid>https://aptakhin.name/posts/2025/boring-low-performance/</guid>
-      <description>Recently, I came across a book about working with low performers, and this topic is discussed in team lead chats. Here&amp;rsquo;s a person who performs poorly, does tasks slowly or incorrectly, and maybe someone else doesn&amp;rsquo;t like the communication. So we put him on a Performance Improvement Plan with some metrics, which, for some reason, we consider objective. And then the person improves or not. If not, then we part ways.</description>
+      <description>Recently, I came across a book about working with low performers, and this topic is discussed in team lead chats. Here&amp;rsquo;s a person who performs poorly, does tasks slowly or incorrectly, and maybe someone else doesn&amp;rsquo;t like the communication. So we put him on a Performance Improvement Plan with some metrics, which, for some reason, we consider objective. And then the person improves or not. If not, then we part ways. If yes, he becomes inspired and motivated and continues performing like a steam locomotive! Probably.
+Let&amp;rsquo;s take a couple of steps back. The manager is responsible for the team processes. So let&amp;rsquo;s discuss what is happening with the processes and whether the person screwed up in them. What options do we have for this low performance?
+If a person performs well and then stops, then why?</description>
     </item>
     
     <item>
@@ -46,7 +64,8 @@ This is all partially true—maybe even the industry is in a bad state. Everythi
       
       <guid>https://aptakhin.name/posts/2025/hiring/</guid>
       <description>Yesterday, the excellent speaker Veronika Ilina saved the weakening ex-speaker Alexander (me) at a meetup about hiring, onboarding and offboarding. A bit about hiring today. it’s not very difficult to make some weird stuff in hiring from my experience. Looking for one position, realize “something is not right” and start looking for another. Opening, changing requirements, closing positions without hiring.
-Yes, It is costly to hire! The time of the hiring manager and the recruiter, if any, and the time of the rest of the team in the interview.</description>
+Yes, It is costly to hire! The time of the hiring manager and the recruiter, if any, and the time of the rest of the team in the interview. More stages are longer and more expensive. Onboarding is 1-3 months. Another plus one person on the communication map.
+Since it&amp;rsquo;s costly to hire, let&amp;rsquo;s optimize everything we can reach to make cheaper. So we&amp;rsquo;ve checked the direction and the strategy.</description>
     </item>
     
     <item>
@@ -57,7 +76,7 @@ Yes, It is costly to hire! The time of the hiring manager and the recruiter, if 
       <guid>https://aptakhin.name/posts/2025/where-is-the-post/</guid>
       <description>I told myself yesterday that I needed to write a post for tomorrow. I wrote down several drafts on different topics, but they weren’t finished, and the post had to happen.
 Over the past month, in the background of work and home, various frivolous activities have happened:
-While suggesting on meetup for the ‘hiring&amp;rsquo; topic, added &amp;lsquo;and off-boarding,&amp;rsquo; and now there will be a mini-talk for 10 minutes I composed limericks, a short poetry format with a punch at the end, trying to rhyme into a form in English.</description>
+While suggesting on meetup for the ‘hiring&amp;rsquo; topic, added &amp;lsquo;and off-boarding,&amp;rsquo; and now there will be a mini-talk for 10 minutes I composed limericks, a short poetry format with a punch at the end, trying to rhyme into a form in English. Remember how much I liked doing something with hokku at school Quest how to sign up for the university library, which is a tall building I used to observe from the city train. I got some fabulous, valuable books Ride roundtrip for a couple of hours to the library on the other side of town for another rare book.</description>
     </item>
     
     <item>
@@ -67,7 +86,8 @@ While suggesting on meetup for the ‘hiring&amp;rsquo; topic, added &amp;lsquo;
       
       <guid>https://aptakhin.name/posts/2024/xp-changes-resistance/</guid>
       <description>After finishing Kent Beck&amp;rsquo;s Extreme Programming recently, I was left with questions about how and why. I agree with the ideas in the book, but there’s always this “but” that seems to undo everything before it. I can read many research papers about individual or group work, yet the resistance remains.
-From school to university and into the early years of work, we’re taught to focus on individual work—individual effort combined with social interaction.</description>
+From school to university and into the early years of work, we’re taught to focus on individual work—individual effort combined with social interaction. As we progress up the career ladder, social interaction becomes more important. But collective engineering practices, like those described in the book, promote something different.
+When we already have a tool in our toolbox, there’s no resistance to using it. It becomes a choice: I understand the limits of individual work, I understand the limits of group work, and I know the best contexts for each.</description>
     </item>
     
     <item>
@@ -77,7 +97,7 @@ From school to university and into the early years of work, we’re taught to fo
       
       <guid>https://aptakhin.name/posts/2024/driving-awareness-engineering/</guid>
       <description>When I learned to drive, some of my teachers tended to repeat: &amp;ldquo;You are driving in the direction where you are looking.&amp;rdquo; But my other teachers told me it was incorrect. Yes, I will crash when my eyes are stuck on one object for a long time. But if my eyes don&amp;rsquo;t stick, I can drive almost 360 degrees from my view by changing the view angle constantly.
-I&amp;rsquo;m a slow driver.</description>
+I&amp;rsquo;m a slow driver. I do not react so fast, and sometimes, I lack certainty. I took many additional lessons after receiving my driver&amp;rsquo;s license, and through practice, I didn&amp;rsquo;t do counter emergency driving, though. Most weren&amp;rsquo;t about hard skills: &amp;ldquo;Look how I amazing avoided emergencies,&amp;rdquo; but more about &amp;ldquo;how I helped emergencies not to happen at all.&amp;rdquo; Even within this context, there were many dangerous situations.</description>
     </item>
     
     <item>
@@ -87,7 +107,9 @@ I&amp;rsquo;m a slow driver.</description>
       
       <guid>https://aptakhin.name/posts/2024/deming-intro/</guid>
       <description>When I scroll LinkedIn I’m definitely not ready to read carefully long reads.
-I opened one article with no images and no interaction. I couldn’t just start reading it. I wanted to scroll and consume it. I tried the exercise two more times, slowing down myself, and didn’t get through the first screen. I can complain a bit about the post-COVID health state, where reading any problematic reading is becoming especially tough.</description>
+I opened one article with no images and no interaction. I couldn’t just start reading it. I wanted to scroll and consume it. I tried the exercise two more times, slowing down myself, and didn’t get through the first screen. I can complain a bit about the post-COVID health state, where reading any problematic reading is becoming especially tough. But more questions, of course, are to me that I need to slow down myself, carefully choosing what I am eating as food and information food, too.
+I’m still in the beginning of the way Vitaly Sharovatov recommended book “The Essential Deming: Leadership Principles from the Father of Quality.”
+I love everything, especially the first chapter, “The World Is Being Ruined by Best Efforts.</description>
     </item>
     
     <item>
@@ -97,7 +119,8 @@ I opened one article with no images and no interaction. I couldn’t just start 
       
       <guid>https://aptakhin.name/posts/2024/dora/</guid>
       <description>My understanding of DORA was about the four key metrics (Deployment frequency, Lead time for changes, Time to restore service, and Change failure rate). I didn’t understand why it should be relevant to my work. Why should these metrics be my Northstar? They don’t give me much value.
-I got a better idea with the nice podcast Dave Farley with DORA research co-creator Nicole Forsgren. The initial motivation was to link technical capital to company financial capital.</description>
+I got a better idea with the nice podcast Dave Farley with DORA research co-creator Nicole Forsgren. The initial motivation was to link technical capital to company financial capital. This is more about building a bridge between engineers, non-technical founders, and managers using arguments and reasoning.
+I came to an understanding. If we have lower-than-high metrics, we should fix them. Around 80% of DORA respondents from 2022 answered that they did not have all high metrics. This is the main target audience because DORA also includes techniques to achieve better results.</description>
     </item>
     
     <item>
@@ -108,7 +131,7 @@ I got a better idea with the nice podcast Dave Farley with DORA research co-cr
       <guid>https://aptakhin.name/posts/2024/art-of-being-busy/</guid>
       <description>I’m sure busy calendars open vast opportunities to choose one things over the others.
 The more people in our department, the busier our calendar, the more valuable we are in terms of power to the company. It’s inappropriate if anyone can see our free calendar and book a meeting for us to discuss something urgent. 15 minutes on Tuesday at 7:45 p.m. in two weeks sounds fine.
-It&amp;rsquo;s easier to add more processes.</description>
+It&amp;rsquo;s easier to add more processes. When there is no slack time, it’s much easier to conduct meetings without agendas and facilitate the decision-making process to continue in two weeks. Remember, there is no space in the current week because of meetings. We are also late to one meeting because of the others, and there is no time for lunch. It’s tough work!</description>
     </item>
     
     <item>
@@ -118,7 +141,8 @@ It&amp;rsquo;s easier to add more processes.</description>
       
       <guid>https://aptakhin.name/posts/2024/overscrummed-by-design/</guid>
       <description>Words about Scrum Loud titles about how Scrum ruined Agile cause boredom or disgust. But in the environment of satirical folklore of ScrumButs, ZombieScrums, and ScreamGuides, we can observe the negative side of the framework. Let’s try to go step by step about the good and bad parts of Scrum.
-Scrum is often called an “Agile framework” or “methodology”, which is wrong. It’s the list of values, roles and meetings. The values don’t match the original Agile’s.</description>
+Scrum is often called an “Agile framework” or “methodology”, which is wrong. It’s the list of values, roles and meetings. The values don’t match the original Agile’s. As referenced in Scrum Guide: &amp;ldquo;Scrum is a lightweight framework that helps people, teams and organisations generate value through adaptive solutions for complex problems&amp;rdquo;. There is no word Agile on the page. Even if Scrum founders don&amp;rsquo;t consider it Agile, we can accept it the same way.
+What is even more destructive than the applied Scrum wrongly in the wrong place is many imprecise interpretations around it.</description>
     </item>
     
     <item>
@@ -128,7 +152,8 @@ Scrum is often called an “Agile framework” or “methodology”, which is wr
       
       <guid>https://aptakhin.name/posts/2022/hiring/</guid>
       <description>How We Should and Should Not Hire Why is hiring so difficult for leaders? Well, there are many moving parts. Also, the decision comes with long-term implications. We can’t predict how new members will interact with the rest of the team — especially under ever-changing circumstances.
-Introducing a new member is a significant addition to a small team that will consume ample resources before we start to see any benefits. Hiring a good developer and onboarding them can each take several months.</description>
+Introducing a new member is a significant addition to a small team that will consume ample resources before we start to see any benefits. Hiring a good developer and onboarding them can each take several months. Ultimately, every hire (or firing, in the worst-case scenario) requires a considerable amount of financial and motivational resources.
+So let’s take a step back. Can we avoid hiring someone altogether? Instead, we could dedicate those resources to optimizing internal processes or the product hypothesis flow in order to decrease the team’s development load.</description>
     </item>
     
     <item>
@@ -138,7 +163,9 @@ Introducing a new member is a significant addition to a small team that will con
       
       <guid>https://aptakhin.name/posts/2022/a-lot-of-work-reflection-and-education/</guid>
       <description>I have subjective experience from my career path, but familiar with every company – from startup and middle-sized to big tech companies. From linear managers to C-level executives, all are stressed with hectic calendars and overloaded with calls and meetings.
-Even worse, often, there is lots of work because a company sometimes decides “much work” as a solution to multiple problems: how people interact with each other, and how the value is pushed from development to client.</description>
+Even worse, often, there is lots of work because a company sometimes decides “much work” as a solution to multiple problems: how people interact with each other, and how the value is pushed from development to client.
+But the problem couldn’t be determined without feedback from outside. We can’t find and solve problems in the company’s system, that we bring together without new knowledge in this area. And we also often lack appropriate feedback.
+We will make the situation only worse if we will follow solving only consequences issues.</description>
     </item>
     
     <item>
@@ -149,7 +176,9 @@ Even worse, often, there is lots of work because a company sometimes decides “
       <guid>https://aptakhin.name/posts/2022/less-complexity-and-fast-feedback-teams/</guid>
       <description>My goal: bring the idea of basic rules about systems. And nudge to think about the decision effects.
 Audience: senior engineers, engineering managers, and product/project managers.
-There are many overcomplications in the Tech industry regarding how to work well. There are too many “new” concepts, many bestseller books, many conferences and many talks with some “new” ideas. We think we missing something we run into it trying to implement things without going deeper into some basis.</description>
+There are many overcomplications in the Tech industry regarding how to work well. There are too many “new” concepts, many bestseller books, many conferences and many talks with some “new” ideas. We think we missing something we run into it trying to implement things without going deeper into some basis. Let’s talk about the basis.
+I draw some context: I am talking about not-so-small not-so-big teams focused on one product or project. A group of people should at least have a goal to be named a team e.g. for commercial: earn more money in the long-term. For non-commercial: make people happier.
+Let’s little generalize our team word.</description>
     </item>
     
     <item>
@@ -160,7 +189,10 @@ There are many overcomplications in the Tech industry regarding how to work well
       <guid>https://aptakhin.name/posts/2020/codereview-summary/</guid>
       <description>Дисклеймер: ниже заметки субъективных ключевых мест с краткостью записи для себя, оригинал видео рекомендуется к просмотру. Оригинал обсуждения здесь: https://www.youtube.com/watch?v=IDj3x__YZgE
 Зачем код ревью Соответствует ли код требованиям в ТЗ Побочные эффекты. Проблемы в других функциях Читаемость. Странные именования Консистентность общему стилю Оптимальность Чистота Повторное использование существующего кода. Агрессивно DRY Соответствие архитектурного изменения Проверка сценариев тестирования Плюсы:
-Уменьшение числа дефектов и увеличение качества кода Совместное владение кодом и бест практик Проблемы Дорого.</description>
+Уменьшение числа дефектов и увеличение качества кода Совместное владение кодом и бест практик Проблемы Дорого.
+Отрицательная обратная связь. Система регулируемая ошибками. Очень дорого. На финальном этапе исправляем ошибки, которые были в начале.
+Этапы проверки субъективные. Иллюзия что есть качество. Люди выдергиваются из процесса разработки на комментарии.
+Пример большие 2-3 недели разработки. От 70-150 комментариев субъективизма. Человек может сказать спасибо что изнасиловали на код ревью, полезно. Человека затюкивают. Нарушение непрерывности решения задач. Time to market повышается.</description>
     </item>
     
     <item>
@@ -172,7 +204,7 @@ There are many overcomplications in the Tech industry regarding how to work well
       <description>Симптомы. Один из подпроцессов в поде кубернетса просто вис и не логировал данные.
 Заходим в поду.
 Чтобы понять про процессы:
-$ top top - 19:00:06 up 22 days, 10:42, 0 users, load average: 0.79, 0.89, 1.11 Tasks: 13 total, 1 running, 7 sleeping, 0 stopped, 5 zombie %Cpu(s): 1.2 us, 1.4 sy, 0.0 ni, 95.0 id, 2.1 wa, 0.2 hi, 0.1 si, 0.1 st MiB Mem : 32165.3 total, 14305.0 free, 3202.</description>
+$ top top - 19:00:06 up 22 days, 10:42, 0 users, load average: 0.79, 0.89, 1.11 Tasks: 13 total, 1 running, 7 sleeping, 0 stopped, 5 zombie %Cpu(s): 1.2 us, 1.4 sy, 0.0 ni, 95.0 id, 2.1 wa, 0.2 hi, 0.1 si, 0.1 st MiB Mem : 32165.3 total, 14305.0 free, 3202.7 used, 14657.6 buff/cache MiB Swap: 0.0 total, 0.0 free, 0.0 used. 28626.0 avail Mem PID USER PR NI VIRT RES SHR S %CPU %MEM TIME+ COMMAND 9 root 20 0 167064 73724 8364 S 3.0 0.2 141:45.52 python 1 root 20 0 381020 53148 13248 S 0.0 0.2 26:46.39 python 780 root 20 0 381020 43252 3324 S 0.</description>
     </item>
     
     <item>
@@ -182,7 +214,8 @@ $ top top - 19:00:06 up 22 days, 10:42, 0 users, load average: 0.79, 0.89, 1.11 
       
       <guid>https://aptakhin.name/cv/</guid>
       <description>Alexander Ptakhin Email me@aptakhin.name (preferred) Mobile +49 151 207 230 26 Linkedin linkedin.com/in/aptakhin Github github.com/aptakhin/publish Summary As an Engineering Manager with a proven track record, I&amp;rsquo;ve successfully led teams in delivering impactful products. Encouraging and facilitating open-minded team discussions for an outgoing team atmosphere and achieving goals. It&amp;rsquo;s also based on strong full-stack and backend developer experience focusing on minding out-of-job positions for customer happiness.
-Experience Senior Engineer, Team Lead Prestatech GmbH, Berlin Sep 2022 – Present (&amp;gt;1 yr 10 mos)</description>
+Experience Senior Engineer, Team Lead Prestatech GmbH, Berlin Sep 2022 – Present (&amp;gt;1 yr 10 mos)
+Managing two cross-functional teams of up to 8 people. Launched it.apply.finioo.com: technical leadership. It shipped in 6 months with the first demo iterations from the 1st month. Organized fast deployment process for the product with frontend with design new domain for developers (linters, tests, no blocking code reviews, CICD pipelines, Kubernetes adoption).</description>
     </item>
     
     <item>
@@ -191,7 +224,7 @@ Experience Senior Engineer, Team Lead Prestatech GmbH, Berlin Sep 2022 – Prese
       <pubDate>Sun, 10 May 2020 00:00:00 +0000</pubDate>
       
       <guid>https://aptakhin.name/cv-ru/</guid>
-      <description>Птахин Александр 30 лет, Москва, для связи: me@aptakhin.name // обновил резюме в июле 2022 Позиция: тимлид разработчиков Python3 Навыки Основные языки: Python3 Менее активные: JavaScript, C++ Руководство: 1-4 мидл разработчиками Сейчас Admitad Global, Руководитель группы, Москва, декабрь 2020 - май 2022 Ответственность за продукты и команду: внутренний DWH в компании, сервисы антифрода, сервис выдачи товарных фидов Донастройка процессов команды и найма, публичные метрики delivery, создание базы знаний по процессам Работа с людьми: наём и развитие Наладка стабильной поставки сущностей: механизмы доотправки, контрактование с консалтингом.</description>
+      <description>Птахин Александр 30 лет, Москва, для связи: me@aptakhin.name // обновил резюме в июле 2022 Позиция: тимлид разработчиков Python3 Навыки Основные языки: Python3 Менее активные: JavaScript, C++ Руководство: 1-4 мидл разработчиками Сейчас Admitad Global, Руководитель группы, Москва, декабрь 2020 - май 2022 Ответственность за продукты и команду: внутренний DWH в компании, сервисы антифрода, сервис выдачи товарных фидов Донастройка процессов команды и найма, публичные метрики delivery, создание базы знаний по процессам Работа с людьми: наём и развитие Наладка стабильной поставки сущностей: механизмы доотправки, контрактование с консалтингом. Автоматизация тестирования сущностей поставки. Запуск антифродных алертов. Тестовый запуск новой версии системы качества трафика Переговоры и контрактование с техническим консалтингом Менеджерские слова: Scrum, Канбан-метод, YouTrack Технические слова: ClickHouse, Kafka, Logstash, Python3, Asyncio, NodeJS, MySQL, RabbitMQ, Terraform Admitad Global, Python Senior Developer, Москва, июль 2020 – ноябрь 2020 Сделал стриминг-выдачу миллионов товаров по http Внедрил интеграционное тестирование: минус полчаса ручной проверки релиза разработчиком (-70% времени) Ключевые слова: Python3, Asyncio, PostgreSQL, Redis, SQLAlchemy, Alembic, Gitlab CI/CD, Ansible Ранее SOVA.</description>
     </item>
     
   </channel>

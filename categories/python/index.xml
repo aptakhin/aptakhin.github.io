@@ -16,7 +16,7 @@
       <description>Симптомы. Один из подпроцессов в поде кубернетса просто вис и не логировал данные.
 Заходим в поду.
 Чтобы понять про процессы:
-$ top top - 19:00:06 up 22 days, 10:42, 0 users, load average: 0.79, 0.89, 1.11 Tasks: 13 total, 1 running, 7 sleeping, 0 stopped, 5 zombie %Cpu(s): 1.2 us, 1.4 sy, 0.0 ni, 95.0 id, 2.1 wa, 0.2 hi, 0.1 si, 0.1 st MiB Mem : 32165.3 total, 14305.0 free, 3202.</description>
+$ top top - 19:00:06 up 22 days, 10:42, 0 users, load average: 0.79, 0.89, 1.11 Tasks: 13 total, 1 running, 7 sleeping, 0 stopped, 5 zombie %Cpu(s): 1.2 us, 1.4 sy, 0.0 ni, 95.0 id, 2.1 wa, 0.2 hi, 0.1 si, 0.1 st MiB Mem : 32165.3 total, 14305.0 free, 3202.7 used, 14657.6 buff/cache MiB Swap: 0.0 total, 0.0 free, 0.0 used. 28626.0 avail Mem PID USER PR NI VIRT RES SHR S %CPU %MEM TIME+ COMMAND 9 root 20 0 167064 73724 8364 S 3.0 0.2 141:45.52 python 1 root 20 0 381020 53148 13248 S 0.0 0.2 26:46.39 python 780 root 20 0 381020 43252 3324 S 0.</description>
     </item>
     
   </channel>
