@@ -33,15 +33,15 @@ However, there are some internal teams that may want ambitious numbers about wha
       <pubDate>Sun, 16 Feb 2025 11:17:29 +0100</pubDate>
       
       <guid>https://aptakhin.name/published/</guid>
-      <description>All talks [RU] Podcast battle &amp;ldquo;Why Scrum Hurts (manager vs agile-coach)&amp;rdquo; Video
+      <description>All talks People vs Processes. How to Survive, Influence, and Improve Quality – Quality Engineering meetup #6 2025, Berlin Slides on SpeakerDeck.com
+[RU] Podcast battle &amp;ldquo;Why Scrum Hurts (manager vs agile-coach)&amp;rdquo; – Organized Programming #47 Video
 Pipeline ETA 3&amp;hellip; 2&amp;hellip; Tomorrow – DevOps Days Zurich 2025 Video | Slides on SpeakerDeck.com
-[RU] Raising team in crisis – Podlodka Teamlead Crew 2025 Video | Slides on SpeakerDeck.com
-Hiring, interviews and offboarding, co-authored with Veronika Ilina, XTC Berlin 2025 Keypoint Slides only
-Enterprise-ready FastAPI - PyBerlin 2024 PDF Slides only
+[RU] Raising team in crisis – Podlodka Teamlead Crew 2025, online Video | Slides on SpeakerDeck.com
+Hiring, interviews and offboarding, co-authored with Veronika Ilina, XTC Berlin 2025 Slides on SpeakerDeck.com
+Enterprise-ready FastAPI - PyBerlin 2024 Slides on SpeakerDeck.com
 [RU] How to grow pythons, observability manual / Как разводить питонов: пособие по observability - Podlodka Python 2023 Video | Google Slides
 Sustainable Python Performance - PyConSWE 2023 Video | PyScript Slides
-Python web performance 101 uncovering the root causes - PyConFr 2023 Video | PDF Slides
-Purpose: What I Learned from Stepping Down as Team Lead Twice - TechLead 2023 Video | PDF Slides</description>
+Python web performance 101 uncovering the root causes - PyConFr 2023 Video | PDF Slides</description>
     </item>
     
     <item>
@@ -222,8 +222,9 @@ $ top top - 19:00:06 up 22 days, 10:42, 0 users, load average: 0.79, 0.89, 1.11 
       <pubDate>Sun, 10 May 2020 00:00:00 +0000</pubDate>
       
       <guid>https://aptakhin.name/cv/</guid>
-      <description>Alexander Ptakhin Email me@aptakhin.name (preferred) Mobile +49 151 207 230 26 Linkedin linkedin.com/in/aptakhin Github github.com/aptakhin/publish Summary As an Engineering Manager with a proven track record, I&amp;rsquo;ve successfully led teams in delivering impactful products. Encouraging and facilitating open-minded team discussions for an outgoing team atmosphere and achieving goals. It&amp;rsquo;s also based on strong full-stack and backend developer experience focusing on minding out-of-job positions for customer happiness.
-Experience Senior Engineer, Team Lead Prestatech GmbH, Berlin Sep 2022 – Present (&amp;gt;1 yr 10 mos)
+      <description>Alexander Ptakhin Email me@aptakhin.name (preferred) Mobile +49 151 207 230 26 Linkedin linkedin.com/in/aptakhin Github github.com/aptakhin/publish BSky bsky.app/profile/aptakhin.name Summary As an Engineering Manager with a proven track record, I&amp;rsquo;ve successfully led teams in delivering impactful products. Encouraging and facilitating human-centered management for an outgoing team atmosphere and achieving goals. It&amp;rsquo;s also based on strong full-stack developer experience focusing on customer happiness.
+Experience Senior Engineer, Team Lead Prestatech GmbH, Berlin Sep 2022 – Present (&amp;gt;3 years 1 months)
+A startup automatizing document processes for banks, loan and estate organizations.
 Managing two cross-functional teams of up to 8 people. Launched it.apply.finioo.com: technical leadership. It shipped in 6 months with the first demo iterations from the 1st month. Organized fast deployment process for the product with frontend with design new domain for developers (linters, tests, no blocking code reviews, CICD pipelines, Kubernetes adoption).</description>
     </item>
     
