@@ -217,15 +217,27 @@ $ top top - 19:00:06 up 22 days, 10:42, 0 users, load average: 0.79, 0.89, 1.11 
     </item>
     
     <item>
-      <title>Alexander Ptakhin Resume</title>
+      <title>Alexander-Ptakhin-Lead-Resume</title>
       <link>https://aptakhin.name/cv/</link>
       <pubDate>Sun, 10 May 2020 00:00:00 +0000</pubDate>
       
       <guid>https://aptakhin.name/cv/</guid>
-      <description>Alexander Ptakhin Email me@aptakhin.name (preferred) Mobile +49 151 207 230 26 Linkedin linkedin.com/in/aptakhin Github github.com/aptakhin/publish BSky bsky.app/profile/aptakhin.name Summary As an Engineering Manager with a proven track record, I&amp;rsquo;ve successfully led teams in delivering impactful products. Encouraging and facilitating human-centered management for an outgoing team atmosphere and achieving goals. It&amp;rsquo;s also based on strong full-stack developer experience focusing on customer happiness.
-Experience Senior Engineer, Team Lead Prestatech GmbH, Berlin Sep 2022 – Present (&amp;gt;3 years 1 months)
+      <description>Alexander Ptakhin Email me@aptakhin.name (preferred) | Mobile +49 151 207 230 26 Linkedin linkedin.com/in/aptakhin | BSky bsky.app/profile/aptakhin.name Github github.com/aptakhin Summary As an Engineering Manager with a proven track record, I&amp;rsquo;ve successfully led teams in delivering impactful products. Encouraging and facilitating human-centered management for an outgoing team atmosphere and achieving goals. It&amp;rsquo;s also based on strong full-stack developer experience focusing on customer happiness.
+Experience Senior Engineer, Team Lead Prestatech GmbH, Berlin Sep 2022 – Present (&amp;gt;3 years 1 month)
 A startup automatizing document processes for banks, loan and estate organizations.
-Managing two cross-functional teams of up to 8 people. Launched it.apply.finioo.com: technical leadership. It shipped in 6 months with the first demo iterations from the 1st month. Organized fast deployment process for the product with frontend with design new domain for developers (linters, tests, no blocking code reviews, CICD pipelines, Kubernetes adoption).</description>
+Managing two cross-functional teams of 4-8 people including developer and QA. Launched de.apply.finioo.com: technical leadership. It shipped in 6 months with the first demo iterations from the 1st month. Organized fast deployment process for the product with frontend with design new domain for developers (linters, tests, no blocking code reviews, CI/CD pipelines, Kubernetes adoption).</description>
+    </item>
+    
+    <item>
+      <title>Alexander-Ptakhin-Tech-Resume</title>
+      <link>https://aptakhin.name/cv-tech/</link>
+      <pubDate>Sun, 10 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://aptakhin.name/cv-tech/</guid>
+      <description>Alexander Ptakhin Email me@aptakhin.name (preferred) | Mobile +49 151 207 230 26 Linkedin linkedin.com/in/aptakhin | BSky bsky.app/profile/aptakhin.name Github github.com/aptakhin Summary As an Senior Software Engineer and Tech Lead with a proven track record, I&amp;rsquo;ve successfully led teams in delivering impactful products. Encouraging and facilitating human-centered management for an outgoing team atmosphere and achieving goals. It&amp;rsquo;s also based on strong full-stack developer experience focusing on customer happiness.
+Experience Senior Engineer, Tech Lead Prestatech GmbH, Berlin Sep 2022 – Present (&amp;gt;3 years 1 month)
+A startup automatizing document processes for banks, loan and estate organizations.
+Technical leadership of two cross-functional teams of 4-8 people: developers and QA. Launched de.apply.finioo.com: technical leadership. It shipped in 6 months with the first demo iterations from the 1st month. Organized fast deployment process for the product with frontend with design new domain for developers (linters, tests, no blocking code reviews, CI/CD pipelines, Kubernetes adoption).</description>
     </item>
     
     <item>
