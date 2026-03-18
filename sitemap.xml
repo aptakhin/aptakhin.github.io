@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://aptakhin.name/impressum/</loc>
+    <lastmod>2026-03-18T21:58:43+01:00</lastmod>
+  </url><url>
     <loc>https://aptakhin.name/</loc>
     <lastmod>2026-01-05T13:47:01+01:00</lastmod>
   </url><url>
@@ -86,12 +89,6 @@
     <loc>https://aptakhin.name/posts/2020/last-in-debugging/</loc>
     <lastmod>2020-05-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://aptakhin.name/cv/</loc>
-    <lastmod>2020-05-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://aptakhin.name/cv-tech/</loc>
-    <lastmod>2020-05-10T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://aptakhin.name/tags/gdb/</loc>
     <lastmod>2020-05-10T00:00:00+00:00</lastmod>
   </url><url>
@@ -99,9 +96,6 @@
     <lastmod>2020-05-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://aptakhin.name/categories/python/</loc>
-    <lastmod>2020-05-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://aptakhin.name/cv-ru/</loc>
     <lastmod>2020-05-10T00:00:00+00:00</lastmod>
   </url>
 </urlset>

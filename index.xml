@@ -8,6 +8,19 @@
     <language>en-us</language>
     <lastBuildDate>Mon, 05 Jan 2026 13:47:01 +0100</lastBuildDate><atom:link href="https://aptakhin.name/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Impressum</title>
+      <link>https://aptakhin.name/impressum/</link>
+      <pubDate>Wed, 18 Mar 2026 21:58:43 +0100</pubDate>
+      
+      <guid>https://aptakhin.name/impressum/</guid>
+      <description>Angaben gemäß § 5 TMG Aleksandr Ptakhin Pohlstr. 82, 10785 Berlin Deutschland
+Kontakt Telefon: +4915159865263 E-Mail: me@aptakhin.name Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV Aleksandr Ptakhin Pohlstr. 82, 10785 Berlin Deutschland
+Streitschlichtung Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: https://ec.europa.eu/consumers/odr
+Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
+Haftungsausschluss Haftung für Inhalte Die Inhalte dieser Seite wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte kann jedoch keine Gewähr übernommen werden. Als Diensteanbieter sind wir gemäß § 7 Abs. 1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.</description>
+    </item>
+    
+    <item>
       <title>Zero Distruction Cult</title>
       <link>https://aptakhin.name/posts/2026/zero-distruction-cult/</link>
       <pubDate>Mon, 05 Jan 2026 13:47:01 +0100</pubDate>
@@ -226,39 +239,6 @@ Let’s little generalize our team word.</description>
 Заходим в поду.
 Чтобы понять про процессы:
 $ top top - 19:00:06 up 22 days, 10:42, 0 users, load average: 0.79, 0.89, 1.11 Tasks: 13 total, 1 running, 7 sleeping, 0 stopped, 5 zombie %Cpu(s): 1.2 us, 1.4 sy, 0.0 ni, 95.0 id, 2.1 wa, 0.2 hi, 0.1 si, 0.1 st MiB Mem : 32165.3 total, 14305.0 free, 3202.7 used, 14657.6 buff/cache MiB Swap: 0.0 total, 0.0 free, 0.0 used. 28626.0 avail Mem PID USER PR NI VIRT RES SHR S %CPU %MEM TIME+ COMMAND 9 root 20 0 167064 73724 8364 S 3.0 0.2 141:45.52 python 1 root 20 0 381020 53148 13248 S 0.0 0.2 26:46.39 python 780 root 20 0 381020 43252 3324 S 0.</description>
-    </item>
-    
-    <item>
-      <title>Alexander-Ptakhin-Lead-Resume</title>
-      <link>https://aptakhin.name/cv/</link>
-      <pubDate>Sun, 10 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://aptakhin.name/cv/</guid>
-      <description>Alexander Ptakhin Email me@aptakhin.name (preferred) | Mobile +49 151 207 230 26 Linkedin linkedin.com/in/aptakhin | BSky bsky.app/profile/aptakhin.name Github github.com/aptakhin Summary As an Engineering Manager with a proven track record, I&amp;rsquo;ve successfully led teams in delivering impactful products. Encouraging and facilitating human-centered management for an outgoing team atmosphere and achieving goals. It&amp;rsquo;s also based on strong full-stack developer experience focusing on customer happiness.
-Experience Senior Engineer, Team Lead Prestatech GmbH, Berlin Sep 2022 – Present (&amp;gt;3 years 1 month)
-A startup automatizing document processes for banks, loan and estate organizations.
-Managing two cross-functional teams of 4-8 people including developer and QA. Launched de.apply.finioo.com: technical leadership. It shipped in 6 months with the first demo iterations from the 1st month. Organized fast deployment process for the product with frontend with design new domain for developers (linters, tests, no blocking code reviews, CI/CD pipelines, Kubernetes adoption).</description>
-    </item>
-    
-    <item>
-      <title>Alexander-Ptakhin-Tech-Resume</title>
-      <link>https://aptakhin.name/cv-tech/</link>
-      <pubDate>Sun, 10 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://aptakhin.name/cv-tech/</guid>
-      <description>Alexander Ptakhin Email me@aptakhin.name (preferred) | Mobile +49 151 207 230 26 Linkedin linkedin.com/in/aptakhin | BSky bsky.app/profile/aptakhin.name Github github.com/aptakhin Summary As an Senior Software Engineer and Tech Lead with a proven track record, I&amp;rsquo;ve successfully led teams in delivering impactful products. Encouraging and facilitating human-centered management for an outgoing team atmosphere and achieving goals. It&amp;rsquo;s also based on strong full-stack developer experience focusing on customer happiness.
-Experience Senior Engineer, Tech Lead Prestatech GmbH, Berlin Sep 2022 – Present (&amp;gt;3 years 1 month)
-A startup automatizing document processes for banks, loan and estate organizations.
-Technical leadership of two cross-functional teams of 4-8 people: developers and QA. Launched de.apply.finioo.com: technical leadership. It shipped in 6 months with the first demo iterations from the 1st month. Organized fast deployment process for the product with frontend with design new domain for developers (linters, tests, no blocking code reviews, CI/CD pipelines, Kubernetes adoption).</description>
-    </item>
-    
-    <item>
-      <title>Резюме Птахина Александра</title>
-      <link>https://aptakhin.name/cv-ru/</link>
-      <pubDate>Sun, 10 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://aptakhin.name/cv-ru/</guid>
-      <description>Птахин Александр 30 лет, Москва, для связи: me@aptakhin.name // обновил резюме в июле 2022 Позиция: тимлид разработчиков Python3 Навыки Основные языки: Python3 Менее активные: JavaScript, C++ Руководство: 1-4 мидл разработчиками Сейчас Admitad Global, Руководитель группы, Москва, декабрь 2020 - май 2022 Ответственность за продукты и команду: внутренний DWH в компании, сервисы антифрода, сервис выдачи товарных фидов Донастройка процессов команды и найма, публичные метрики delivery, создание базы знаний по процессам Работа с людьми: наём и развитие Наладка стабильной поставки сущностей: механизмы доотправки, контрактование с консалтингом. Автоматизация тестирования сущностей поставки. Запуск антифродных алертов. Тестовый запуск новой версии системы качества трафика Переговоры и контрактование с техническим консалтингом Менеджерские слова: Scrum, Канбан-метод, YouTrack Технические слова: ClickHouse, Kafka, Logstash, Python3, Asyncio, NodeJS, MySQL, RabbitMQ, Terraform Admitad Global, Python Senior Developer, Москва, июль 2020 – ноябрь 2020 Сделал стриминг-выдачу миллионов товаров по http Внедрил интеграционное тестирование: минус полчаса ручной проверки релиза разработчиком (-70% времени) Ключевые слова: Python3, Asyncio, PostgreSQL, Redis, SQLAlchemy, Alembic, Gitlab CI/CD, Ansible Ранее SOVA.</description>
     </item>
     
   </channel>
