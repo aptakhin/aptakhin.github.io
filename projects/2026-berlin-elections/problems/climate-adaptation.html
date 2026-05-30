@@ -54,7 +54,7 @@
               <summary>Original German position</summary>
               <p class="body" x-text="position.text_de"></p>
             </details>
-            <details x-show="language">
+            <details x-show="language" :open="!!language">
               <summary x-text="'Translation: ' + languageName()"></summary>
               <p class="body" x-text="position.translations[language] || 'Translation is not cached yet. Run scripts/build.sh --translate to fill it.'"></p>
             </details>
@@ -63,6 +63,11 @@
       </div>
     </section>
   </main>
+
+  <footer>
+    <a href="https://github.com/aptakhin/Deutschland">aptakhin/Deutschland</a>
+    <a href="https://aptakhin.name/impressum/" x-text="language === '' ? 'Impressum' : 'Legal notice'"></a>
+  </footer>
 
   <script>
     function problemApp(clusterId) {
