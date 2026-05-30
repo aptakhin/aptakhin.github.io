@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Democracy and Civil Rights - Berlin 2026 Party Program Comparison</title>
+  <link rel="stylesheet" href="../styles.css">
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body x-data="topicApp('democracy')" x-init="load()">
+  <header>
+    <div>
+      <p class="eyebrow"><a :href="withLang('../index.html')">Berlin elections 2026</a></p>
+      <h1>Democracy and Civil Rights</h1>
+    </div>
+    <nav class="language-links" aria-label="Languages">
+      <a :class="{active: language === ''}" :href="withLang('democracy.html', '')">DE</a>
+      
+        <a :class="{active: language === 'en'}" :href="withLang('democracy.html', 'en')">EN</a>
+      
+        <a :class="{active: language === 'tr'}" :href="withLang('democracy.html', 'tr')">TR</a>
+      
+        <a :class="{active: language === 'ar'}" :href="withLang('democracy.html', 'ar')">AR</a>
+      
+        <a :class="{active: language === 'uk'}" :href="withLang('democracy.html', 'uk')">UK</a>
+      
+        <a :class="{active: language === 'ru'}" :href="withLang('democracy.html', 'ru')">RU</a>
+      
+    </nav>
+  </header>
+
+  <main class="topic-page">
+    <aside aria-label="Topics">
+      <template x-for="item in site.topics" :key="item.id">
+        <a :class="{active: item.id === topicId}" :href="withLang(item.id + '.html')">
+          <span x-text="item.title"></span>
+          <strong x-text="item.position_count"></strong>
+        </a>
+      </template>
+    </aside>
+
+    <section>
+      <p class="muted">Short summaries are shown first. Open each position for the original German text and any cached translations.</p>
+      <div class="grid">
+        <template x-for="position in topic.positions" :key="position.id">
+          <article>
+            <div class="party">
+              <span class="dot" :style="partyStyle(position.party_id)"></span>
+              <strong x-text="position.party_name"></strong>
+            </div>
+            <h2 x-text="position.heading"></h2>
+            <p x-text="position.summary_de"></p>
+            <details>
+              <summary>Original German position</summary>
+              <p class="body" x-text="position.text_de"></p>
+            </details>
+            <details x-show="language">
+              <summary x-text="'Translation: ' + languageName()"></summary>
+              <p class="body" x-text="position.translations[language] || 'Translation is not cached yet. Run scripts/build.sh --translate to fill it.'"></p>
+            </details>
+          </article>
+        </template>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    function topicApp(topicId) {
+      return {
+        topicId,
+        site: {topics: [], parties: [], languages: []},
+        topic: {positions: []},
+        language: '',
+        async load() {
+          this.language = new URLSearchParams(window.location.search).get('lang') || '';
+          const [siteResponse, topicResponse] = await Promise.all([
+            fetch('../data/site.json'),
+            fetch(`../data/topics/${topicId}.json`)
+          ]);
+          this.site = await siteResponse.json();
+          this.topic = await topicResponse.json();
+        },
+        languageName() {
+          const found = this.site.languages.find((lang) => lang.code === this.language);
+          return found ? found.name : '';
+        },
+        withLang(href, code = this.language) {
+          if (!code) return href;
+          const separator = href.includes('?') ? '&' : '?';
+          return `${href}${separator}lang=${encodeURIComponent(code)}`;
+        },
+        partyStyle(id) {
+          const party = this.site.parties.find((item) => item.id === id);
+          return `background:${party ? party.color : '#666'}`;
+        }
+      };
+    }
+  </script>
+</body>
+</html>

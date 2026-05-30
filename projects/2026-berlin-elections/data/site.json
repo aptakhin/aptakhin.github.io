@@ -1,0 +1,384 @@
+{
+  "generated_at": 1780171313,
+  "translation_enabled": true,
+  "languages": [
+    {
+      "code": "en",
+      "name": "English"
+    },
+    {
+      "code": "tr",
+      "name": "Turkish"
+    },
+    {
+      "code": "ar",
+      "name": "Arabic"
+    },
+    {
+      "code": "uk",
+      "name": "Ukrainian"
+    },
+    {
+      "code": "ru",
+      "name": "Russian"
+    }
+  ],
+  "parties": [
+    {
+      "id": "cdu",
+      "name": "CDU Berlin",
+      "color": "#111827",
+      "sources": [
+        "original/Berlin-Plan_CDU-Berlin_2021-2026.pdf"
+      ]
+    },
+    {
+      "id": "spd",
+      "name": "SPD Berlin",
+      "color": "#e30613",
+      "sources": [
+        "original/SPD_Antrag_02I2026_Entwurf_Wahlprogramm_Fassung_AK.pdf"
+      ]
+    },
+    {
+      "id": "gruene",
+      "name": "Bündnis 90 / DIE GRÜNEN Berlin",
+      "color": "#3f8f29",
+      "sources": [
+        "original/Unser Wahlprogramm - Kapitel 1 – Bündnis 90 _ DIE GRÜNEN Berlin.html",
+        "original/Unser Wahlprogramm - Kapitel 2 – Bündnis 90 _ DIE GRÜNEN Berlin.html"
+      ]
+    },
+    {
+      "id": "linke",
+      "name": "Die Linke Berlin",
+      "color": "#be3075",
+      "sources": [
+        "original/Wahlprogramm_ Die Linke Berlin.html"
+      ]
+    },
+    {
+      "id": "fdp",
+      "name": "FDP Berlin",
+      "color": "#ffed00",
+      "sources": [
+        "original/Wahlprogramm_FDP Berlin_Abgeordnetenhauswahl 2026.pdf"
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "id": "housing",
+      "title": "Housing and Rent",
+      "keywords": [
+        "wohnen",
+        "miete",
+        "mieten",
+        "wohnung",
+        "wohnungen",
+        "neubau",
+        "wohnungsbau",
+        "verdrängung",
+        "obdach",
+        "mieter"
+      ],
+      "position_count": 193,
+      "href": "topics/housing.html",
+      "data_href": "data/topics/housing.json"
+    },
+    {
+      "id": "mobility",
+      "title": "Mobility and Transport",
+      "keywords": [
+        "verkehr",
+        "mobilität",
+        "öpnv",
+        "bahn",
+        "bus",
+        "fahrrad",
+        "auto",
+        "straße",
+        "parken",
+        "fußverkehr"
+      ],
+      "position_count": 198,
+      "href": "topics/mobility.html",
+      "data_href": "data/topics/mobility.json"
+    },
+    {
+      "id": "climate",
+      "title": "Climate, Energy and Environment",
+      "keywords": [
+        "klima",
+        "energie",
+        "wärme",
+        "umwelt",
+        "grün",
+        "hitze",
+        "wasser",
+        "emission",
+        "erneuerbar",
+        "nachhaltig"
+      ],
+      "position_count": 148,
+      "href": "topics/climate.html",
+      "data_href": "data/topics/climate.json"
+    },
+    {
+      "id": "education",
+      "title": "Education and Schools",
+      "keywords": [
+        "bildung",
+        "schule",
+        "schulen",
+        "kita",
+        "studium",
+        "universität",
+        "ausbildung",
+        "lehrer",
+        "lernen"
+      ],
+      "position_count": 227,
+      "href": "topics/education.html",
+      "data_href": "data/topics/education.json"
+    },
+    {
+      "id": "health",
+      "title": "Health and Care",
+      "keywords": [
+        "gesundheit",
+        "pflege",
+        "krankenhaus",
+        "medizin",
+        "ärzt",
+        "psychi",
+        "patient",
+        "versorgung"
+      ],
+      "position_count": 84,
+      "href": "topics/health.html",
+      "data_href": "data/topics/health.json"
+    },
+    {
+      "id": "economy",
+      "title": "Economy, Work and Taxes",
+      "keywords": [
+        "wirtschaft",
+        "arbeit",
+        "arbeits",
+        "unternehmen",
+        "steuer",
+        "haushalt",
+        "finanz",
+        "industrie",
+        "startup"
+      ],
+      "position_count": 287,
+      "href": "topics/economy.html",
+      "data_href": "data/topics/economy.json"
+    },
+    {
+      "id": "migration",
+      "title": "Migration and Participation",
+      "keywords": [
+        "migration",
+        "flucht",
+        "geflücht",
+        "integration",
+        "einwander",
+        "staatsbürg",
+        "teilhabe",
+        "diskriminierung"
+      ],
+      "position_count": 36,
+      "href": "topics/migration.html",
+      "data_href": "data/topics/migration.json"
+    },
+    {
+      "id": "security",
+      "title": "Security, Justice and Administration",
+      "keywords": [
+        "sicherheit",
+        "polizei",
+        "justiz",
+        "verwaltung",
+        "digitalisierung",
+        "bürgeramt",
+        "ordnung",
+        "katastroph"
+      ],
+      "position_count": 108,
+      "href": "topics/security.html",
+      "data_href": "data/topics/security.json"
+    },
+    {
+      "id": "culture",
+      "title": "Culture, Sport and City Life",
+      "keywords": [
+        "kultur",
+        "sport",
+        "club",
+        "musik",
+        "kunst",
+        "freizeit",
+        "ehrenamt",
+        "tourismus"
+      ],
+      "position_count": 151,
+      "href": "topics/culture.html",
+      "data_href": "data/topics/culture.json"
+    },
+    {
+      "id": "democracy",
+      "title": "Democracy and Civil Rights",
+      "keywords": [
+        "demokratie",
+        "beteiligung",
+        "transparenz",
+        "rechte",
+        "freiheit",
+        "gleichstellung",
+        "queer",
+        "frauen"
+      ],
+      "position_count": 64,
+      "href": "topics/democracy.html",
+      "data_href": "data/topics/democracy.json"
+    },
+    {
+      "id": "other",
+      "title": "Other Positions",
+      "keywords": [],
+      "position_count": 148,
+      "href": "topics/other.html",
+      "data_href": "data/topics/other.json"
+    }
+  ],
+  "problem_clusters": [
+    {
+      "id": "rent-pressure",
+      "problem_de": "Steigende Mieten und Verdrängung belasten Haushalte.",
+      "topic_ids": [
+        "housing"
+      ],
+      "party_ids": [
+        "cdu",
+        "fdp",
+        "gruene",
+        "linke",
+        "spd"
+      ],
+      "position_count": 15,
+      "review_status": "seed",
+      "href": "problems/rent-pressure.html",
+      "data_href": "data/problems/rent-pressure.json"
+    },
+    {
+      "id": "housing-shortage",
+      "problem_de": "Berlin braucht mehr bezahlbaren Wohnraum.",
+      "topic_ids": [
+        "housing"
+      ],
+      "party_ids": [
+        "cdu",
+        "fdp",
+        "gruene",
+        "linke",
+        "spd"
+      ],
+      "position_count": 15,
+      "review_status": "seed",
+      "href": "problems/housing-shortage.html",
+      "data_href": "data/problems/housing-shortage.json"
+    },
+    {
+      "id": "public-transport-reliability",
+      "problem_de": "Busse und Bahnen sollen zuverlässiger und zugänglicher werden.",
+      "topic_ids": [
+        "mobility"
+      ],
+      "party_ids": [
+        "cdu",
+        "fdp",
+        "gruene",
+        "linke",
+        "spd"
+      ],
+      "position_count": 13,
+      "review_status": "seed",
+      "href": "problems/public-transport-reliability.html",
+      "data_href": "data/problems/public-transport-reliability.json"
+    },
+    {
+      "id": "safe-cycling-walking",
+      "problem_de": "Rad- und Fußverkehr brauchen sichere Wege.",
+      "topic_ids": [
+        "mobility"
+      ],
+      "party_ids": [
+        "cdu",
+        "fdp",
+        "linke",
+        "spd"
+      ],
+      "position_count": 10,
+      "review_status": "seed",
+      "href": "problems/safe-cycling-walking.html",
+      "data_href": "data/problems/safe-cycling-walking.json"
+    },
+    {
+      "id": "school-capacity",
+      "problem_de": "Schulen und Kitas brauchen genug Plätze, Personal und Gebäude.",
+      "topic_ids": [
+        "education"
+      ],
+      "party_ids": [
+        "cdu",
+        "fdp",
+        "gruene",
+        "linke",
+        "spd"
+      ],
+      "position_count": 15,
+      "review_status": "seed",
+      "href": "problems/school-capacity.html",
+      "data_href": "data/problems/school-capacity.json"
+    },
+    {
+      "id": "climate-adaptation",
+      "problem_de": "Berlin muss besser mit Hitze, Wasser und Klimafolgen umgehen.",
+      "topic_ids": [
+        "climate"
+      ],
+      "party_ids": [
+        "cdu",
+        "fdp",
+        "gruene",
+        "linke",
+        "spd"
+      ],
+      "position_count": 15,
+      "review_status": "seed",
+      "href": "problems/climate-adaptation.html",
+      "data_href": "data/problems/climate-adaptation.json"
+    },
+    {
+      "id": "administration-digital-services",
+      "problem_de": "Verwaltung und Bürgerdienste sollen schneller und digitaler werden.",
+      "topic_ids": [
+        "security"
+      ],
+      "party_ids": [
+        "cdu",
+        "fdp",
+        "gruene",
+        "linke",
+        "spd"
+      ],
+      "position_count": 13,
+      "review_status": "seed",
+      "href": "problems/administration-digital-services.html",
+      "data_href": "data/problems/administration-digital-services.json"
+    }
+  ]
+}

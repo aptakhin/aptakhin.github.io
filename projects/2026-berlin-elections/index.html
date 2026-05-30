@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Berlin 2026 Party Program Comparison</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body x-data="programApp()" x-init="load()">
+  <header>
+    <div>
+      <p class="eyebrow">Berlin elections 2026</p>
+      <h1>Party program comparison by problem</h1>
+    </div>
+    <div>
+      <nav class="language-links" aria-label="Languages">
+        <a :class="{active: language === ''}" :href="withLang('index.html', '')">DE</a>
+        
+          <a :class="{active: language === 'en'}" :href="withLang('index.html', 'en')">EN</a>
+        
+          <a :class="{active: language === 'tr'}" :href="withLang('index.html', 'tr')">TR</a>
+        
+          <a :class="{active: language === 'ar'}" :href="withLang('index.html', 'ar')">AR</a>
+        
+          <a :class="{active: language === 'uk'}" :href="withLang('index.html', 'uk')">UK</a>
+        
+          <a :class="{active: language === 'ru'}" :href="withLang('index.html', 'ru')">RU</a>
+        
+      </nav>
+      <p class="muted">11 broad topics. Reviewed problem clusters appear first.</p>
+    </div>
+  </header>
+
+  <main class="index-page">
+    <section>
+      <template x-if="site.problem_clusters.length">
+        <div>
+          <h2>Reviewed Problems</h2>
+          <div class="topic-list">
+            <template x-for="cluster in site.problem_clusters" :key="cluster.id">
+              <a class="topic-link" :href="withLang(cluster.href)">
+                <span x-text="cluster.problem_de"></span>
+                <strong x-text="cluster.position_count"></strong>
+              </a>
+            </template>
+          </div>
+        </div>
+      </template>
+
+      <h2>Broad Topics</h2>
+      <p class="muted">Topics are editable keyword buckets used to prepare and review cross-party problem clusters.</p>
+      <div class="topic-list">
+        <template x-for="topic in site.topics" :key="topic.id">
+          <a class="topic-link" :href="withLang(topic.href)">
+            <span x-text="topic.title"></span>
+            <strong x-text="topic.position_count"></strong>
+          </a>
+        </template>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    function programApp() {
+      return {
+        site: {topics: [], problem_clusters: [], parties: [], languages: []},
+        language: '',
+        async load() {
+          this.language = new URLSearchParams(window.location.search).get('lang') || '';
+          const response = await fetch('data/site.json');
+          this.site = await response.json();
+        },
+        withLang(href, code = this.language) {
+          if (!code) return href;
+          const separator = href.includes('?') ? '&' : '?';
+          return `${href}${separator}lang=${encodeURIComponent(code)}`;
+        }
+      };
+    }
+  </script>
+</body>
+</html>
